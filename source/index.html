@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simetrika — Tu Página Web Profesional en 3 Días</title>
+    
+    <!-- Meta etiquetas SEO -->
+    <meta name="description" content="Creamos tu página web profesional de altísimo impacto en solo 3 días. Optimizado para Google, ultra-rápido y con diseño premium para multiplicar tus ventas.">
+    <meta name="keywords" content="diseño web profesional, paginas web argentina, paginas web premium, landing page profesional, simetrika, creadores de webs rapidas">
+    <meta name="author" content="Simetrika">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simetrika.com.ar">
+    <meta property="og:title" content="Simetrika — Tu Página Web Profesional en 3 Días">
+    <meta property="og:description" content="Diseño web premium y ultra-rápido para hacer crecer tu negocio. Listo en 3 días sin complicaciones.">
+    <meta property="og:image" content="https://simetrika.com.ar/assets/og-image.jpg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Outfit (Títulos) & Plus Jakarta Sans (Cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN para iconografía ultra-premium -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#080c14',
+                            card: 'rgba(13, 20, 35, 0.6)',
+                            border: 'rgba(255, 255, 255, 0.08)',
+                            primary: '#8b5cf6',   // Violeta
+                            secondary: '#06b6d4', // Cian
+                            accent: '#ec4899'     // Rosa
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float-delayed 8s ease-in-out infinite',
+                        'glow': 'glow 3s infinite alternate',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Estilos CSS personalizados para efectos avanzados de $5000 USD -->
+    <style>
+        /* Animación de flotación suave */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        @keyframes float-delayed {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(15px) rotate(5deg); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+            animation: float-delayed 8s ease-in-out infinite;
+        }
+
+        /* Gradientes premium y texto brillante */
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #22d3ee 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-purple {
+            background: linear-gradient(135deg, #c084fc 0%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Efecto Glassmorphism */
+        .glass-card {
+            background: rgba(10, 17, 32, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(139, 92, 246, 0.3);
+            box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .glass-card-accent {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.05) 100%);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card-accent:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+            box-shadow: 0 20px 45px -12px rgba(139, 92, 246, 0.25);
+            transform: translateY(-4px);
+        }
+
+        /* Scrollbar premium */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080c14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(139, 92, 246, 0.3);
+            border-radius: 5px;
+            border: 2px solid #080c14;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(139, 92, 246, 0.6);
+        }
+
+        /* Ambient Glow en el fondo */
+        .glow-blob {
+            filter: blur(130px);
+            opacity: 0.18;
+            pointer-events: none;
+            mix-blend-mode: plus-lighter;
+        }
+
+        /* Efecto de borde de gradiente animado en Hover */
+        .gradient-btn {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .gradient-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #06b6d4 100%);
+            z-index: -1;
+            transition: opacity 0.5s ease;
+        }
+        .gradient-btn:hover::before {
+            opacity: 0.85;
+        }
+
+        /* Animaciones para scroll reveal */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark font-sans text-slate-300 antialiased overflow-x-hidden selection:bg-purple-500/30 selection:text-white">
+
+    <!-- Efectos Ambient Glow Fijos en Fondo -->
+    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-purple-700 glow-blob animate-pulse-slow"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-700 glow-blob animate-pulse-slow" style="animation-delay: -3s;"></div>
+    <div class="fixed top-[40%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-pink-700 glow-blob animate-pulse-slow" style="animation-delay: -5s;"></div>
+
+    <!-- WhatsApp Flotante Ultra Premium -->
+    <a href="https://wa.me/5491171571891?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" 
+       target="_blank" 
+       class="fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 bg-[#25d366] text-white rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:shadow-[0_8px_40px_rgb(37,211,102,0.7)] hover:scale-110 active:scale-95 transition-all duration-300 group"
+       title="Hablemos por WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8 transition-transform group-hover:rotate-12"></i>
+        <span class="absolute right-20 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+            ¿Hablamos por WhatsApp? ⚡
+        </span>
+    </a>
+
+    <!-- Navbar Flotante -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-40 transition-all duration-500 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logotipo -->
+                <a href="#" class="flex items-center space-x-2 group">
+                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-cyan-500 flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.3)] transition-transform group-hover:scale-105">
+                        <i data-lucide="layers" class="w-5 h-5 text-white"></i>
+                    </span>
+                    <span class="text-2xl font-bold font-display tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all">Simetrika</span>
+                </a>
+                
+                <!-- Navegación de Escritorio -->
+                <nav class="hidden md:flex items-center space-x-1 glass-card rounded-full px-2 py-1.5 border border-white/5 bg-slate-950/40">
+                    <a href="#beneficios" class="nav-link text-sm font-medium px-5 py-2 rounded-full text-slate-400 hover:text-white transition-all duration-300">Beneficios</a>
+                    <a href="#portafolio" class="nav-link text-sm font-medium px-5 py-2 rounded-full text-slate-400 hover:text-white transition-all duration-300">Diseños</a>
+                    <a href="#calculadora" class="nav-link text-sm font-medium px-5 py-2 rounded-full text-slate-400 hover:text-white transition-all duration-300">Calculadora</a>
+                    <a href="#proceso" class="nav-link text-sm font-medium px-5 py-2 rounded-full text-slate-400 hover:text-white transition-all duration-300">Proceso</a>
+                </nav>
+
+                <!-- Botón CTA en Navbar -->
+                <div class="hidden md:flex items-center">
+                    <a href="#cotizador" class="gradient-btn px-6 py-2.5 rounded-full font-semibold text-sm text-white shadow-[0_4px_20px_rgba(139,92,246,0.25)] hover:shadow-[0_4px_30px_rgba(139,92,246,0.4)] transition-all">
+                        Cotizar Mi Web
+                    </a>
+                </div>
+
+                <!-- Botón de Menú Móvil -->
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition-all">
+                    <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-brand-dark/95 border-b border-white/10 backdrop-blur-xl px-6 py-6 space-y-4 flex flex-col transition-all duration-300">
+            <a href="#beneficios" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Beneficios</a>
+            <a href="#portafolio" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Diseños</a>
+            <a href="#calculadora" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Calculadora</a>
+            <a href="#proceso" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Proceso</a>
+            <a href="#cotizador" class="gradient-btn w-full text-center py-3.5 rounded-full font-semibold text-white mt-4 block shadow-[0_4px_20px_rgba(139,92,246,0.25)]">
+                Cotizar Mi Web
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-28 px-6 sm:px-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Texto del Hero -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <!-- Badge Premium -->
+                <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/25 px-4 py-2 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.08)]">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                    </span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">⚡ Tu Web en tiempo récord</span>
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-display leading-[1.05] text-white tracking-tight">
+                    Tu negocio merece estar en <span class="text-gradient-primary">Internet</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                    Diseñamos páginas web profesionales de altísimo impacto visual y comercial. En 3 días, sin tecnicismos y optimizadas para captar clientes desde el primer momento.
+                </p>
+                
+                <!-- Acciones -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-2">
+                    <a href="#cotizador" class="gradient-btn w-full sm:w-auto px-8 py-4 rounded-full text-lg font-semibold text-white text-center hover-lift shadow-[0_10px_30px_-5px_rgba(139,92,246,0.3)]">
+                        Quiero mi Página Web
+                    </a>
+                    <a href="#beneficios" class="w-full sm:w-auto glass-card px-8 py-4 rounded-full text-lg font-semibold text-white text-center hover:bg-white/5 transition flex items-center justify-center space-x-2">
+                        <span>Ver Beneficios</span>
+                        <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Info rápida de confianza -->
+                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/5 text-center lg:text-left max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl font-bold font-display text-white">3 Días</div>
+                        <div class="text-xs text-slate-500 uppercase font-semibold">Entrega Garantizada</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold font-display text-white">100%</div>
+                        <div class="text-xs text-slate-500 uppercase font-semibold">Responsivo</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold font-display text-white">SEO</div>
+                        <div class="text-xs text-slate-500 uppercase font-semibold">Optimizado Google</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visualización Mockup Asimétrica (Hero Mockup) -->
+            <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+                <div class="relative mx-auto max-w-[380px] sm:max-w-[420px] lg:max-w-none">
+                    <!-- Decoración brillante detrás del mockup -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-cyan-500 rounded-3xl blur-2xl opacity-20 transform -rotate-6 scale-95 pointer-events-none"></div>
+                    
+                    <!-- Elemento 3D / Mockup de Sitio Web en CSS -->
+                    <div class="relative glass-card-accent p-4 rounded-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform hover:rotate-2 hover:scale-[1.02] transition-all duration-500">
+                        <div class="flex items-center space-x-2 mb-3 pb-2 border-b border-white/5">
+                            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                            <span class="text-[10px] text-slate-500 ml-4 font-mono select-none">https://tu-marca.com</span>
+                        </div>
+                        
+                        <!-- Simulación de interfaz premium de landing page -->
+                        <div class="bg-[#0b0f19] rounded-xl p-4 space-y-4 overflow-hidden border border-white/5">
+                            <!-- Hero interno simulado -->
+                            <div class="space-y-2 py-4 text-center">
+                                <div class="w-16 h-4 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[8px] font-bold rounded-full mx-auto flex items-center justify-center">NUEVO PRODUCTO</div>
+                                <div class="h-6 w-3/4 bg-gradient-to-r from-white to-slate-400 rounded-md mx-auto"></div>
+                                <div class="h-3 w-1/2 bg-slate-700/50 rounded-md mx-auto"></div>
+                            </div>
+                            <!-- Elementos gráficos de dashboard o ventas -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-slate-900/80 p-3 rounded-lg border border-white/5">
+                                    <span class="text-[9px] text-slate-500 block uppercase font-bold">Ventas Totales</span>
+                                    <div class="flex items-baseline space-x-1.5 mt-1">
+                                        <span class="text-sm font-bold text-white font-display">$42.800</span>
+                                        <span class="text-[8px] text-emerald-400 font-bold">+18%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-800 h-1.5 rounded-full mt-2 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-purple-500 to-cyan-500 h-full rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900/80 p-3 rounded-lg border border-white/5">
+                                    <span class="text-[9px] text-slate-500 block uppercase font-bold">Conversiones</span>
+                                    <div class="flex items-baseline space-x-1.5 mt-1">
+                                        <span class="text-sm font-bold text-white font-display">4.2%</span>
+                                        <span class="text-[8px] text-purple-400 font-bold">Óptimo</span>
+                                    </div>
+                                    <div class="flex space-x-1 items-end h-6 mt-1.5">
+                                        <span class="bg-slate-800 w-full h-[30%] rounded-sm"></span>
+                                        <span class="bg-purple-500/50 w-full h-[60%] rounded-sm"></span>
+                                        <span class="bg-purple-500 w-full h-[85%] rounded-sm"></span>
+                                        <span class="bg-cyan-500 w-full h-[100%] rounded-sm"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CTA simulado -->
+                            <div class="bg-gradient-to-r from-purple-600 to-cyan-500 rounded-lg py-2.5 text-center text-[10px] font-bold text-white shadow-lg shadow-purple-900/35">
+                                Ver Catálogo Online
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insignia Flotante Extra -->
+                    <div class="absolute -bottom-6 -left-6 bg-slate-900/90 border border-white/10 p-4 rounded-2xl flex items-center space-x-3 shadow-xl backdrop-blur-xl animate-float">
+                        <span class="p-2.5 bg-emerald-500/10 rounded-xl text-emerald-400 border border-emerald-500/20">
+                            <i data-lucide="trending-up" class="w-5 h-5"></i>
+                        </span>
+                        <div>
+                            <div class="text-white font-bold font-display text-sm">Ventas Online</div>
+                            <div class="text-[10px] text-slate-400 font-medium">Incrementadas a x3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bento Grid de Beneficios -->
+    <section id="beneficios" class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
+                    ¿Por qué necesitas una <span class="text-gradient-primary">Página Web?</span>
+                </h2>
+                <p class="text-lg text-slate-400 leading-relaxed font-light">
+                    Mientras dependas únicamente de redes sociales, no controlás tu negocio. Tu página web es tu activo digital número uno.
+                </p>
+            </div>
+            
+            <!-- Bento Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Tarjeta Bento 1 (Grande - 2 columnas en MD) -->
+                <div class="glass-card-accent p-8 rounded-2xl md:col-span-2 flex flex-col justify-between group">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 bg-purple-500/15 border border-purple-500/25 rounded-2xl flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                            <i data-lucide="search" class="w-7 h-7"></i>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-2xl font-bold font-display text-white">Aparecé en Google (SEO Orgánico)</h3>
+                            <p class="text-slate-400 leading-relaxed font-light text-base">
+                                El 97% de los usuarios busca negocios locales en Google. Si no tenés un sitio web indexado, le estás cediendo todo ese tráfico a tus competidores que sí lo tienen. Con Simetrika, optimizamos tu estructura web bajo los lineamientos modernos de Google.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/5 flex items-center space-x-2 text-purple-400 text-sm font-semibold group-hover:translate-x-1.5 transition-transform duration-300">
+                        <span>Aprender más sobre SEO</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta Bento 2 (Estadística Vertical) -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between text-center relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-purple-400 font-display">Estadística Probada</span>
+                        <div class="text-7xl font-extrabold font-display text-white text-gradient-primary tracking-tight">+300%</div>
+                        <p class="text-sm text-slate-400 font-light">
+                            De incremento promedio en consultas directas que reciben los negocios tradicionales al implementar una landing profesional frente a quienes solo usan perfiles sociales.
+                        </p>
+                    </div>
+                    <div class="mt-8 p-3.5 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 text-xs font-semibold">
+                        📈 Clientes más calificados
+                    </div>
+                </div>
+
+                <!-- Tarjeta Bento 3 (Credibilidad) -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 bg-cyan-500/15 border border-cyan-500/25 rounded-2xl flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                            <i data-lucide="shield-check" class="w-7 h-7"></i>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold font-display text-white">Credibilidad y Status</h3>
+                            <p class="text-slate-400 leading-relaxed font-light text-sm">
+                                Una dirección de correo profesional y una web de alto diseño marcan la diferencia entre un negocio informal y un referente en el sector. Tus clientes van a saber que sos de confianza.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-500 font-medium">Estabilidad 24/7 sin límites de plataformas</div>
+                </div>
+
+                <!-- Tarjeta Bento 4 (Siempre abierto) -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 bg-pink-500/15 border border-pink-500/25 rounded-2xl flex items-center justify-center text-pink-400 group-hover:scale-110 transition-transform">
+                            <i data-lucide="clock" class="w-7 h-7"></i>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold font-display text-white">Ventas y Captación 24/7</h3>
+                            <p class="text-slate-400 leading-relaxed font-light text-sm">
+                                Tu web no tiene días libres. Permití que tus potenciales clientes investiguen tus servicios, conozcan tus tarifas y te manden solicitudes de cotización incluso mientras dormís.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-500 font-medium">Automatiza respuestas a dudas comunes</div>
+                </div>
+
+                <!-- Tarjeta Bento 5 (Conversión Automática) -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 bg-emerald-500/15 border border-emerald-500/25 rounded-2xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                            <i data-lucide="zap" class="w-7 h-7"></i>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold font-display text-white">Embudo de WhatsApp</h3>
+                            <p class="text-slate-400 leading-relaxed font-light text-sm">
+                                Redirige el tráfico directamente a tu canal de ventas más eficiente: WhatsApp. Pero no con un simple clic, sino con leads ya filtrados y mensajes pre-estructurados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-500 font-medium">Menos pérdida de tiempo explicando servicios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualizador Interactivo de Portafolio / Showcase -->
+    <section id="portafolio" class="py-24 px-6 sm:px-8 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">Estilo e Innovación</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
+                    Diseños que <span class="text-gradient-cyan">Enamoran</span> y Venden
+                </h2>
+                <p class="text-lg text-slate-400 font-light">
+                    Explora ejemplos de layouts profesionales que adaptamos a la identidad de tu marca para optimizar la experiencia de usuario.
+                </p>
+                
+                <!-- Selector de categorías de plantillas -->
+                <div class="flex justify-center space-x-2 pt-4">
+                    <button onclick="switchTemplate('corporativa')" id="btn-corporativa" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-600/90 text-white border border-purple-500/30">
+                        Corporativa / Servicios
+                    </button>
+                    <button onclick="switchTemplate('tienda')" id="btn-tienda" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5">
+                        Tienda Online / Catálogo
+                    </button>
+                    <button onclick="switchTemplate('personal')" id="btn-personal" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5">
+                        Portfolio Profesional
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interfaz Interactiva de Showcase -->
+            <div class="grid lg:grid-cols-12 gap-8 items-center pt-4">
+                
+                <!-- Descripciones de Plantilla -->
+                <div class="lg:col-span-4 space-y-6">
+                    <div id="template-info" class="space-y-4">
+                        <h3 id="template-title" class="text-3xl font-bold font-display text-white">Elegancia Corporativa</h3>
+                        <p id="template-desc" class="text-slate-400 leading-relaxed font-light">
+                            Ideal para consultores, agencias, constructoras y profesionales de la salud. Enfocado en generar confianza inmediata, detallar servicios con claridad y capturar contactos cualificados rápidamente.
+                        </p>
+                        <ul id="template-features" class="space-y-2.5 pt-2">
+                            <li class="flex items-center space-x-2.5 text-sm text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                <span>Sección de Servicios y tarifas clara</span>
+                            </li>
+                            <li class="flex items-center space-x-2.5 text-sm text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                <span>Bloque de Testimonios y reseñas</span>
+                            </li>
+                            <li class="flex items-center space-x-2.5 text-sm text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                <span>Integración de agendas de reservas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Simulación Dinámica de la Web (Desktop & Mobile Preview) -->
+                <div class="lg:col-span-8 flex flex-col items-center justify-center">
+                    <div class="w-full relative glass-card p-4 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] overflow-hidden">
+                        
+                        <!-- Barra de control de navegador sim -->
+                        <div class="flex items-center justify-between pb-3 border-b border-white/5 mb-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3.5 h-3.5 rounded-full bg-rose-500/80"></span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-amber-500/80"></span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-emerald-500/80"></span>
+                                <div id="showcase-url" class="bg-slate-900 border border-white/5 rounded-md px-4 py-1 text-xs text-slate-400 font-mono w-48 sm:w-64 select-none ml-4 overflow-hidden truncate">
+                                    https://simetrika.com/corporativa
+                                </div>
+                            </div>
+                            <!-- Switcher Móvil vs Desktop Simulado -->
+                            <div class="flex bg-slate-900 border border-white/10 rounded-lg p-0.5">
+                                <button onclick="toggleDeviceMode('desktop')" id="btn-device-desktop" class="p-1.5 rounded-md bg-purple-600 text-white transition-all">
+                                    <i data-lucide="monitor" class="w-4 h-4"></i>
+                                </button>
+                                <button onclick="toggleDeviceMode('mobile')" id="btn-device-mobile" class="p-1.5 rounded-md text-slate-400 hover:text-white transition-all">
+                                    <i data-lucide="smartphone" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Render de la Web de Showcase -->
+                        <div id="device-container" class="relative mx-auto transition-all duration-500 w-full h-[360px] bg-[#080c14] rounded-2xl overflow-hidden border border-white/5 p-0 scrollbar-none group/device">
+                            <!-- Contenido del template interactivo -->
+                            <div id="template-render-content" class="transition-transform duration-[12s] ease-in-out transform translate-y-0 group-hover/device:-translate-y-[calc(100%-360px)] pb-12 text-left">
+                                <!-- Se renderiza dinámicamente vía JS -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora ROI Interactiva -->
+    <section id="calculadora" class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-purple-400 font-display">Retorno de Inversión</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
+                    Calcula el Impacto en tu <span class="text-gradient-purple">Negocio</span>
+                </h2>
+                <p class="text-lg text-slate-400 font-light">
+                    Una página web no es un gasto, es una inversión. Usa este simulador interactivo para visualizar el potencial de facturación mensual que estás perdiendo por no estar online.
+                </p>
+            </div>
+
+            <!-- Dashboard de la calculadora -->
+            <div class="glass-card-accent p-8 rounded-3xl max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Inputs (Sliders) -->
+                <div class="space-y-8">
+                    <!-- Slider 1 -->
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <label for="slider-clientes" class="text-sm font-semibold text-slate-300">Nuevas visitas mensuales estimadas</label>
+                            <span id="val-clientes" class="text-lg font-bold font-display text-white">500</span>
+                        </div>
+                        <input type="range" id="slider-clientes" min="100" max="5000" step="100" value="1000" 
+                               class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-purple-500 focus:outline-none">
+                        <div class="flex justify-between text-[10px] text-slate-500 font-medium">
+                            <span>100 visitas</span>
+                            <span>5.000 visitas</span>
+                        </div>
+                    </div>
+
+                    <!-- Slider 2 -->
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <label for="slider-valor" class="text-sm font-semibold text-slate-300">Valor promedio de tu servicio / producto</label>
+                            <span id="val-valor" class="text-lg font-bold font-display text-white">$50 USD</span>
+                        </div>
+                        <input type="range" id="slider-valor" min="5" max="500" step="5" value="50" 
+                               class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-500 focus:outline-none">
+                        <div class="flex justify-between text-[10px] text-slate-500 font-medium">
+                            <span>$5 USD</span>
+                            <span>$500 USD</span>
+                        </div>
+                    </div>
+
+                    <!-- Nota aclaratoria -->
+                    <div class="bg-brand-dark/50 border border-white/5 rounded-xl p-4 flex items-start space-x-3">
+                        <i data-lucide="info" class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Asumimos una tasa de conversión promedio conservadora de tan solo <strong>2.5%</strong> (visitas que te contactan por WhatsApp o compran).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Display de Resultados -->
+                <div class="bg-slate-900/80 border border-white/10 rounded-2xl p-6 text-center space-y-6 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-cyan-500/10"></div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 font-display">Facturación Adicional Estimada</span>
+                        <div id="total-revenue" class="text-5xl md:text-6xl font-black font-display text-white mt-2 tracking-tight text-gradient-primary">
+                            $1,250 USD
+                        </div>
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Mensuales recurrentes</p>
+                    </div>
+                    
+                    <div class="border-t border-white/5 pt-4 grid grid-cols-2 gap-4">
+                        <div class="text-left">
+                            <span class="text-[10px] text-slate-500 uppercase font-bold block">Contactos Calificados</span>
+                            <span id="total-leads" class="text-lg font-bold text-white font-display">25 / mes</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-[10px] text-slate-500 uppercase font-bold block">ROI de tu Web</span>
+                            <span class="text-lg font-bold text-emerald-400 font-display">Instantáneo</span>
+                        </div>
+                    </div>
+
+                    <a href="#cotizador" class="gradient-btn w-full py-4 rounded-xl font-bold text-white block text-sm shadow-lg hover:shadow-purple-500/20 transition-all">
+                        Captar este potencial ahora
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso Moderno -->
+    <section id="proceso" class="py-24 px-6 sm:px-8 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">Velocidad y Eficiencia</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
+                    Simple, Rápido y <span class="text-gradient-cyan">Garantizado</span>
+                </h2>
+                <p class="text-lg text-slate-400 font-light">
+                    Nos encargamos del diseño, la programación y la configuración de servidores. Vos solo esperás los resultados.
+                </p>
+            </div>
+
+            <!-- Grid de Proceso de 3 pasos -->
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Línea de Conexión en Desktop -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20 z-0"></div>
+                
+                <!-- Paso 1 -->
+                <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-purple-600 to-indigo-500 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-purple-900/30 group-hover:scale-110 transition-transform">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold font-display text-white">Paso 1: Nos Contás tu Idea</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed font-light">
+                            Hablamos por WhatsApp de forma dinámica. Nos contás qué hace tu negocio, tu público objetivo y tus preferencias visuales. Sin cuestionarios técnicos complejos.
+                        </p>
+                    </div>
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-purple-400">
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                        <span>Demora: ~10 minutos</span>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-pink-500 to-rose-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-pink-900/30 group-hover:scale-110 transition-transform">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold font-display text-white">Paso 2: Construimos Tu Web</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed font-light">
+                            Nuestro equipo crea un prototipo premium exclusivo para ti. Registramos tu dominio, configuramos el servidor de alto rendimiento y el certificado SSL de seguridad.
+                        </p>
+                    </div>
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-pink-400">
+                        <i data-lucide="code" class="w-4 h-4"></i>
+                        <span>Tiempo: 48 a 72 Horas</span>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-cyan-500 to-blue-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-cyan-900/30 group-hover:scale-110 transition-transform">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold font-display text-white">Paso 3: ¡Lanzamiento y Ventas!</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed font-light">
+                            Publicamos tu página y la enlazamos a tu WhatsApp y redes sociales. Empiezas a capturar contactos y a posicionar tu negocio de manera profesional en Google.
+                        </p>
+                    </div>
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-cyan-400">
+                        <i data-lucide="rocket" class="w-4 h-4"></i>
+                        <span>¡Tu negocio online para siempre!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparativa: Redes vs Web -->
+    <section class="py-24 px-6 sm:px-8 bg-slate-950/20 relative">
+        <div class="max-w-5xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-display text-white">
+                    "¿No es suficiente con <span class="text-gradient-purple">Instagram o Facebook</span>?"
+                </h2>
+                <p class="text-base text-slate-400 font-light">
+                    Las redes sociales son fantásticos canales de atención, pero no deben ser los pilares de tu marca. Aquí la gran diferencia:
+                </p>
+            </div>
+
+            <!-- Tabla Comparativa Premium -->
+            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
+                <div class="grid grid-cols-12 bg-slate-950/60 p-4 border-b border-white/10 font-bold text-sm text-white select-none">
+                    <div class="col-span-6">Característica</div>
+                    <div class="col-span-3 text-center text-purple-400">Página Web Propia</div>
+                    <div class="col-span-3 text-center text-slate-500">Solo Redes Sociales</div>
+                </div>
+                <div class="divide-y divide-white/5 font-light text-sm">
+                    <div class="grid grid-cols-12 p-4 items-center">
+                        <div class="col-span-6 font-semibold text-slate-200">Aparición en búsquedas de intención (Google)</div>
+                        <div class="col-span-3 text-center text-emerald-400 font-semibold"><i data-lucide="check" class="w-5 h-5 mx-auto"></i></div>
+                        <div class="col-span-3 text-center text-slate-500"><i data-lucide="x" class="w-4 h-4 mx-auto"></i></div>
+                    </div>
+                    <div class="grid grid-cols-12 p-4 items-center">
+                        <div class="col-span-6 font-semibold text-slate-200">Control de la experiencia visual y marca</div>
+                        <div class="col-span-3 text-center text-emerald-400 font-semibold">100% Personalizable</div>
+                        <div class="col-span-3 text-center text-slate-500">Formato Genérico</div>
+                    </div>
+                    <div class="grid grid-cols-12 p-4 items-center">
+                        <div class="col-span-6 font-semibold text-slate-200">Riesgo de cierre de cuenta / cambios de algoritmo</div>
+                        <div class="col-span-3 text-center text-emerald-400 font-semibold">Cero (Es de tu propiedad)</div>
+                        <div class="col-span-3 text-center text-rose-500 font-semibold">Muy Alto</div>
+                    </div>
+                    <div class="grid grid-cols-12 p-4 items-center">
+                        <div class="col-span-6 font-semibold text-slate-200">Imagen y estatus del negocio</div>
+                        <div class="col-span-3 text-center text-emerald-400 font-semibold">Empresa Consolidada</div>
+                        <div class="col-span-3 text-center text-slate-500">Comercio Informal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué Incluye -->
+    <section class="py-24 px-6 sm:px-8 relative border-t border-white/5 bg-slate-950/40">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-pink-400 font-display">Todo Incluido</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
+                    Sin sorpresas, ni <span class="text-gradient-purple">costos ocultos</span>
+                </h2>
+                <p class="text-lg text-slate-400 font-light">
+                    Creamos una solución llave en mano lista para funcionar. No tenés que configurar absolutamente nada.
+                </p>
+            </div>
+
+            <!-- Rejilla de características -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tarjeta de característica 1 -->
+                <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                    <span class="p-3 bg-purple-500/10 rounded-xl text-purple-400"><i data-lucide="layout" class="w-5 h-5"></i></span>
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white font-display">Diseño Exclusivo</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">Estructura adaptada específicamente a tu modelo de negocio y manual de marca.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de característica 2 -->
+                <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                    <span class="p-3 bg-cyan-500/10 rounded-xl text-cyan-400"><i data-lucide="smartphone" class="w-5 h-5"></i></span>
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white font-display">100% Mobile First</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">El 80% de tus visitas entrarán desde su celular. Tu web cargará de forma perfecta.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de característica 3 -->
+                <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                    <span class="p-3 bg-pink-500/10 rounded-xl text-pink-400"><i data-lucide="globe" class="w-5 h-5"></i></span>
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white font-display">Dominio e SSL Incluidos</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">Registramos tu dominio .com o .com.ar y activamos el candado de seguridad SSL.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de característica 4 -->
+                <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                    <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="message-circle" class="w-5 h-5"></i></span>
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white font-display">Botón de WhatsApp Inteligente</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">Enlaza directamente con tu equipo comercial con mensajes preparados para vender.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de característica 5 -->
+                <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                    <span class="p-3 bg-blue-500/10 rounded-xl text-blue-400"><i data-lucide="server" class="w-5 h-5"></i></span>
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white font-display">Hosting Ultra Rápido</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">Servidor optimizado para que las imágenes y la estructura carguen en milisegundos.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de característica 6 -->
+                <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
+                    <span class="p-3 bg-amber-500/10 rounded-xl text-amber-400"><i data-lucide="search" class="w-5 h-5"></i></span>
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white font-display">Optimización de SEO Inicial</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">Añadimos palabras clave del sector en los títulos para facilitar la indexación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotizador Paso a Paso / Lead Wizard -->
+    <section id="cotizador" class="py-24 px-6 sm:px-8 relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-purple-400 font-display">Comienza Hoy Mismo</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
+                    Cotiza tu Página en <span class="text-gradient-primary">60 Segundos</span>
+                </h2>
+                <p class="text-lg text-slate-400 font-light">
+                    Completá este configurador interactivo para contarnos tus necesidades y generar tu orden directamente a nuestro WhatsApp de soporte.
+                </p>
+            </div>
+
+            <!-- Interfaz del configurador multi-paso -->
+            <div class="glass-card-accent p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1.5 bg-slate-900">
+                    <div id="wizard-progress" class="h-full bg-gradient-to-r from-purple-500 to-cyan-400 transition-all duration-500" style="width: 33%"></div>
+                </div>
+
+                <!-- Indicador de pasos -->
+                <div class="flex justify-between items-center text-xs font-bold uppercase tracking-wider text-slate-500 mb-8 font-display">
+                    <span id="step-number" class="text-purple-400">Paso 1 de 3</span>
+                    <span id="step-title">Elegir Tipo de Negocio</span>
+                </div>
+
+                <!-- Contenido dinámico del Paso -->
+                <form id="wizard-form" onsubmit="handleWizardSubmit(event)">
+                    <!-- Paso 1 -->
+                    <div id="step-content-1" class="wizard-step space-y-6">
+                        <h3 class="text-xl font-bold text-white font-display">¿A qué se dedica tu negocio o emprendimiento?</h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                                <input type="radio" name="negocio" value="Servicios Profesionales" class="hidden" checked onclick="selectWizardCard(this)">
+                                <div class="flex justify-between items-center w-full">
+                                    <span class="p-3 bg-purple-500/10 rounded-xl text-purple-400"><i data-lucide="briefcase" class="w-6 h-6"></i></span>
+                                    <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
+                                </div>
+                                <div class="mt-6">
+                                    <span class="text-lg font-bold text-white font-display block">Servicios / Consultoría</span>
+                                    <span class="text-xs text-slate-400 font-light mt-1 block">Abogados, psicólogos, agencias, reformas, etc.</span>
+                                </div>
+                            </label>
+                            
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                                <input type="radio" name="negocio" value="Tienda Online o Catálogo" class="hidden" onclick="selectWizardCard(this)">
+                                <div class="flex justify-between items-center w-full">
+                                    <span class="p-3 bg-cyan-500/10 rounded-xl text-cyan-400"><i data-lucide="shopping-bag" class="w-6 h-6"></i></span>
+                                    <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
+                                </div>
+                                <div class="mt-6">
+                                    <span class="text-lg font-bold text-white font-display block">Tienda / Catálogo</span>
+                                    <span class="text-xs text-slate-400 font-light mt-1 block">Venta de productos físicos con pasarela de pagos o WhatsApp.</span>
+                                </div>
+                            </label>
+
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                                <input type="radio" name="negocio" value="Negocio de Comida o Gastronomía" class="hidden" onclick="selectWizardCard(this)">
+                                <div class="flex justify-between items-center w-full">
+                                    <span class="p-3 bg-pink-500/10 rounded-xl text-pink-400"><i data-lucide="coffee" class="w-6 h-6"></i></span>
+                                    <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
+                                </div>
+                                <div class="mt-6">
+                                    <span class="text-lg font-bold text-white font-display block">Gastronomía / Restaurante</span>
+                                    <span class="text-xs text-slate-400 font-light mt-1 block">Menú interactivo, pedidos online o reservas de mesa.</span>
+                                </div>
+                            </label>
+
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                                <input type="radio" name="negocio" value="Marca Personal o Portfolio" class="hidden" onclick="selectWizardCard(this)">
+                                <div class="flex justify-between items-center w-full">
+                                    <span class="p-3 bg-blue-500/10 rounded-xl text-blue-400"><i data-lucide="user" class="w-6 h-6"></i></span>
+                                    <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
+                                </div>
+                                <div class="mt-6">
+                                    <span class="text-lg font-bold text-white font-display block">Marca Personal / Portfolio</span>
+                                    <span class="text-xs text-slate-400 font-light mt-1 block">Artistas, diseñadores, oradores o currículums interactivos.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Paso 2 (Inicialmente oculto) -->
+                    <div id="step-content-2" class="wizard-step hidden space-y-6">
+                        <h3 class="text-xl font-bold text-white font-display">¿Cuál es el objetivo principal de tu nueva web?</h3>
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <label class="wizard-card-goal cursor-pointer border border-purple-500/50 bg-purple-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500 transition-all select-none">
+                                <input type="radio" name="objetivo" value="Captar Clientes" class="hidden" checked onclick="selectWizardGoal(this)">
+                                <span class="p-4 bg-purple-500/10 rounded-full text-purple-400"><i data-lucide="phone-call" class="w-7 h-7"></i></span>
+                                <span class="text-base font-bold text-white font-display block">Recibir Consultas</span>
+                                <span class="text-xs text-slate-400 font-light">Llamadas y chats de potenciales clientes.</span>
+                            </label>
+                            
+                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500/50 transition-all select-none">
+                                <input type="radio" name="objetivo" value="Vender Directamente" class="hidden" onclick="selectWizardGoal(this)">
+                                <span class="p-4 bg-cyan-500/10 rounded-full text-cyan-400"><i data-lucide="credit-card" class="w-7 h-7"></i></span>
+                                <span class="text-base font-bold text-white font-display block">Vender Online</span>
+                                <span class="text-xs text-slate-400 font-light">Procesar pagos o pedidos directos de productos.</span>
+                            </label>
+
+                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500/50 transition-all select-none">
+                                <input type="radio" name="objetivo" value="Exposición de Marca" class="hidden" onclick="selectWizardGoal(this)">
+                                <span class="p-4 bg-pink-500/10 rounded-full text-pink-400"><i data-lucide="eye" class="w-7 h-7"></i></span>
+                                <span class="text-base font-bold text-white font-display block">Branding / Estatus</span>
+                                <span class="text-xs text-slate-400 font-light">Presentar tu empresa, historia y proyectos.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Paso 3 (Inicialmente oculto) -->
+                    <div id="step-content-3" class="wizard-step hidden space-y-6">
+                        <h3 class="text-xl font-bold text-white font-display">¿Contás con contenido listo para subir?</h3>
+                        <div class="space-y-4">
+                            <label class="wizard-card-content cursor-pointer border border-purple-500/50 bg-purple-950/10 rounded-xl p-5 flex items-center justify-between hover:border-purple-500 transition-all select-none">
+                                <div class="flex items-center space-x-4">
+                                    <input type="radio" name="contenido" value="Tengo Logo y Textos Listos" class="hidden" checked onclick="selectWizardContent(this)">
+                                    <span class="p-3 bg-purple-500/10 rounded-lg text-purple-400"><i data-lucide="file-text" class="w-5 h-5"></i></span>
+                                    <div class="text-left">
+                                        <span class="text-sm font-bold text-white block">Tengo logotipo y textos iniciales</span>
+                                        <span class="text-xs text-slate-400">Podemos acelerar el desarrollo del diseño de inmediato.</span>
+                                    </div>
+                                </div>
+                                <span class="wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
+                            </label>
+
+                            <label class="wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-purple-500/50 transition-all select-none">
+                                <div class="flex items-center space-x-4">
+                                    <input type="radio" name="contenido" value="Necesito Ayuda Con El Contenido" class="hidden" onclick="selectWizardContent(this)">
+                                    <span class="p-3 bg-cyan-500/10 rounded-lg text-cyan-400"><i data-lucide="edit" class="w-5 h-5"></i></span>
+                                    <div class="text-left">
+                                        <span class="text-sm font-bold text-white block">Necesito ayuda (No tengo textos ni logo)</span>
+                                        <span class="text-xs text-slate-400">Te asesoramos y redactamos tus secciones con copywriting profesional.</span>
+                                    </div>
+                                </div>
+                                <span class="wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Navegación del Wizard -->
+                    <div class="flex justify-between items-center pt-10 border-t border-white/5 mt-8">
+                        <button type="button" id="wizard-prev-btn" onclick="wizardPrev()" class="hidden px-6 py-3 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-all">
+                            Atrás
+                        </button>
+                        <button type="button" id="wizard-next-btn" onclick="wizardNext()" class="gradient-btn px-8 py-3.5 rounded-full font-bold text-sm text-white shadow-lg shadow-purple-900/30 ml-auto">
+                            Continuar
+                        </button>
+                        <button type="submit" id="wizard-submit-btn" class="hidden gradient-btn px-8 py-3.5 rounded-full font-bold text-sm text-white shadow-lg shadow-purple-900/30 ml-auto flex items-center space-x-2">
+                            <span>Enviar por WhatsApp</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) en Acordeón -->
+    <section class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">Preguntas Frecuentes</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold font-display text-white">
+                    Despeja tus <span class="text-gradient-cyan">dudas</span> antes de empezar
+                </h2>
+                <p class="text-base text-slate-400 font-light">
+                    Respondemos las consultas más recurrentes sobre nuestro servicio express de desarrollo web.
+                </p>
+            </div>
+
+            <!-- Acordeones FAQ -->
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center text-white font-bold font-display hover:bg-white/5 transition-all">
+                        <span>¿De verdad mi página estará lista en solo 3 días?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-sm text-slate-400 leading-relaxed font-light border-t border-white/5">
+                            ¡Totalmente real! Siempre que nos proporciones la información clave sobre tu negocio y tus formas de contacto en nuestro primer contacto. Contamos con una metodología ágil y plantillas base de altísimo nivel técnico preparadas para ser personalizadas y publicadas sin demoras.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center text-white font-bold font-display hover:bg-white/5 transition-all">
+                        <span>¿Tengo costos de mantenimiento mensuales o anuales?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-sm text-slate-400 leading-relaxed font-light border-t border-white/5">
+                            El desarrollo del diseño inicial de tu web tiene un único pago de desarrollo. Tras el primer año, solo debes renovar de forma anual el costo del dominio (tu nombre en internet, aprox. 10 USD anuales) y el hosting (almacenamiento rápido en la nube, aprox. 35 USD anuales). No hay contratos de permanencia ni mensualidades obligatorias.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center text-white font-bold font-display hover:bg-white/5 transition-all">
+                        <span>¿Puedo modificar el contenido de mi web yo mismo en el futuro?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-sm text-slate-400 leading-relaxed font-light border-t border-white/5">
+                            ¡Sí, por supuesto! Estructuramos el código bajo estándares hiper-modulares que te permiten cambiar imágenes, banners y editar textos de forma sumamente sencilla con una guía rápida de 5 minutos que te pasamos al entregar la web. O si preferís, siempre podés pedirnos los cambios a nosotros.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center text-white font-bold font-display hover:bg-white/5 transition-all">
+                        <span>¿Mi web aparecerá en búsquedas de Google?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-sm text-slate-400 leading-relaxed font-light border-t border-white/5">
+                            Sí. Incorporamos etiquetas semánticas de HTML5 y los códigos estructurados de SEO iniciales recomendados por Google (Meta-tags, Schema de negocio local, sitemap XML). Indexamos tu web en el panel de control oficial de Google Search Console una vez publicada para acelerar su aparición.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
+    <footer class="py-16 px-6 sm:px-8 border-t border-white/10 bg-slate-950/80 relative">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-left">
+            
+            <!-- Columna Logo/Propósito -->
+            <div class="space-y-4 md:col-span-2">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-cyan-500 flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.3)]">
+                        <i data-lucide="layers" class="w-5 h-5 text-white"></i>
+                    </span>
+                    <span class="text-2xl font-bold font-display tracking-tight text-white">Simetrika</span>
+                </a>
+                <p class="text-sm text-slate-400 max-w-sm leading-relaxed font-light">
+                    Llevamos tu negocio tradicional a la era digital mediante landings y sitios web de altísima conversión, optimizados para Google, veloces y con un diseño premium que enamora.
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="https://wa.me/5491171571891" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <!-- Enlaces Rápidos -->
+            <div class="space-y-4">
+                <h5 class="text-sm font-bold uppercase tracking-wider text-white font-display">Navegación</h5>
+                <ul class="space-y-2.5 text-sm font-light text-slate-400">
+                    <li><a href="#beneficios" class="hover:text-purple-400 transition-colors">Beneficios</a></li>
+                    <li><a href="#portafolio" class="hover:text-purple-400 transition-colors">Portafolio / Diseños</a></li>
+                    <li><a href="#calculadora" class="hover:text-purple-400 transition-colors">Calculadora de ROI</a></li>
+                    <li><a href="#proceso" class="hover:text-purple-400 transition-colors">Proceso de Trabajo</a></li>
+                </ul>
+            </div>
+
+            <!-- Soporte -->
+            <div class="space-y-4">
+                <h5 class="text-sm font-bold uppercase tracking-wider text-white font-display">Contacto</h5>
+                <ul class="space-y-2.5 text-sm font-light text-slate-400">
+                    <li class="flex items-center space-x-2"><i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i><span>WhatsApp: +54 9 11 7157-1891</span></li>
+                    <li class="flex items-center space-x-2"><i data-lucide="mail" class="w-4 h-4 text-purple-400"></i><span>hola@simetrika.com.ar</span></li>
+                    <li class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i><span>Buenos Aires, Argentina</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copy -->
+        <div class="max-w-7xl mx-auto border-t border-white/5 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs font-light text-slate-500 space-y-4 sm:space-y-0">
+            <p>© 2026 Simetrika. Todos los derechos reservados. Rediseño con estándar internacional.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-slate-400 transition-colors">Términos y condiciones</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Políticas de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lógica de Interactividad en Javascript Vanilla -->
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+
+        // 1. Comportamiento del Navbar Dinámico
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
+                navbar.classList.remove('border-transparent');
+            } else {
+                navbar.classList.remove('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
+                navbar.classList.add('border-transparent');
+            }
+        });
+
+        // Menú hamburguesa móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            // Cambiar icono
+            if (isHidden) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // Ocultar menú móvil en clic de link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // 2. Lógica del Visualizador Interactivo de Portafolio / Showcase
+        let currentTemplate = 'corporativa';
+        let currentDevice = 'desktop';
+
+        const templateData = {
+            corporativa: {
+                title: 'Elegancia Corporativa / Servicios',
+                desc: 'Ideal para consultores, agencias, constructoras y profesionales de la salud. Enfocado en generar confianza inmediata, detallar servicios con claridad y capturar contactos cualificados rápidamente.',
+                url: 'https://simetrika.com/corporativa',
+                features: [
+                    'Sección de Servicios y tarifas clara',
+                    'Bloque de Testimonios y reseñas',
+                    'Integración de agendas de reservas',
+                    'Diseño alineado a marca corporativa'
+                ],
+                renderHtml: `
+                    <!-- Header -->
+                    <div class="flex justify-between items-center bg-[#090d16]/90 border-b border-white/5 px-4 py-3 sticky top-0 z-10 backdrop-blur-md">
+                        <div class="text-[10px] font-bold text-white tracking-wider font-display flex items-center space-x-1.5">
+                            <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                            <span>NEXUS CONSULTING</span>
+                        </div>
+                        <div class="h-2 w-12 bg-white/10 rounded-full"></div>
+                    </div>
+                    
+                    <!-- Hero -->
+                    <div class="relative h-44 flex flex-col justify-center px-4 text-left overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(8,12,20,0.5) 0%, rgba(8,12,20,0.9) 100%), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80');">
+                        <span class="text-[7px] text-purple-400 font-bold uppercase tracking-wider">Líderes en Finanzas</span>
+                        <h4 class="text-xs font-bold text-white mt-1 max-w-[200px] leading-tight">Diseñamos el futuro de tus inversiones globales</h4>
+                        <div class="mt-3 flex space-x-1.5">
+                            <span class="text-[7px] bg-purple-600 text-white font-semibold px-2 py-0.5 rounded">Empezar</span>
+                            <span class="text-[7px] bg-white/10 text-white font-semibold px-2 py-0.5 rounded border border-white/5">Saber Más</span>
+                        </div>
+                    </div>
+
+                    <!-- Servicios -->
+                    <div class="p-4 space-y-3 bg-[#080c14]">
+                        <span class="text-[8px] font-bold text-slate-500 uppercase block tracking-wider">Nuestros Servicios</span>
+                        <div class="grid grid-cols-2 gap-2.5">
+                            <div class="bg-slate-900/60 p-2.5 rounded-lg border border-white/5 space-y-1.5">
+                                <div class="w-5 h-5 bg-purple-500/10 text-purple-400 rounded flex items-center justify-center"><i data-lucide="bar-chart" class="w-3 h-3"></i></div>
+                                <div class="text-[9px] font-bold text-white">Gestión de Activos</div>
+                                <div class="text-[7px] text-slate-400 leading-tight">Optimización automatizada de fondos.</div>
+                            </div>
+                            <div class="bg-slate-900/60 p-2.5 rounded-lg border border-white/5 space-y-1.5">
+                                <div class="w-5 h-5 bg-cyan-500/10 text-cyan-400 rounded flex items-center justify-center"><i data-lucide="shield" class="w-3 h-3"></i></div>
+                                <div class="text-[9px] font-bold text-white">Ciberseguridad</div>
+                                <div class="text-[7px] text-slate-400 leading-tight">Seguridad bancaria encriptada.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sobre Nosotros -->
+                    <div class="p-4 flex items-center space-x-3 bg-slate-950/80 border-y border-white/5">
+                        <div class="w-16 h-16 rounded-lg bg-cover bg-center flex-shrink-0" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=300&q=80');"></div>
+                        <div class="space-y-1">
+                            <span class="text-[8px] font-bold text-purple-400 block uppercase">Equipo Nexus</span>
+                            <div class="text-[9px] font-bold text-white">Consultoría de nivel internacional</div>
+                            <p class="text-[7px] text-slate-400 leading-normal">Más de 15 años estructurando portafolios de alto rendimiento.</p>
+                        </div>
+                    </div>
+
+                    <!-- Métricas -->
+                    <div class="grid grid-cols-3 gap-2 p-4 bg-[#080c14] text-center">
+                        <div class="bg-slate-900/40 p-2 rounded border border-white/5">
+                            <div class="text-xs font-bold text-purple-400 font-display">+150M</div>
+                            <div class="text-[6px] text-slate-500 uppercase font-semibold">USD Administrados</div>
+                        </div>
+                        <div class="bg-slate-900/40 p-2 rounded border border-white/5">
+                            <div class="text-xs font-bold text-cyan-400 font-display">99.9%</div>
+                            <div class="text-[6px] text-slate-500 uppercase font-semibold">Uptime SLA</div>
+                        </div>
+                        <div class="bg-slate-900/40 p-2 rounded border border-white/5">
+                            <div class="text-xs font-bold text-pink-400 font-display">12</div>
+                            <div class="text-[6px] text-slate-500 uppercase font-semibold">Países Activos</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio -->
+                    <div class="p-4 bg-slate-900/40 border-t border-white/5 space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-6 h-6 rounded-full bg-purple-600 flex items-center justify-center text-[8px] font-bold text-white">MG</span>
+                            <div>
+                                <div class="text-[9px] font-bold text-white">María González</div>
+                                <div class="text-[7px] text-yellow-400">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-[8px] text-slate-400 font-light italic">"El sitio web duplicó mis reservas de consultoría en las primeras dos semanas. Altamente profesional."</p>
+                    </div>
+                `
+            },
+            tienda: {
+                title: 'Tienda Online / Catálogo de Productos',
+                desc: 'Perfecto para marcas de indumentaria, venta de calzado, accesorios, cosméticos o repuestos. Muestra tus productos en una galería elegante, con filtros rápidos y la opción de finalizar la compra vía carrito o WhatsApp.',
+                url: 'https://simetrika.com/tienda',
+                features: [
+                    'Galería interactiva con filtros rápidos',
+                    'Ficha de producto optimizada',
+                    'Integración de pagos (MercadoPago / Stripe)',
+                    'Orden de compra estructurada a WhatsApp'
+                ],
+                renderHtml: `
+                    <!-- Header -->
+                    <div class="flex justify-between items-center bg-[#0d0912]/95 border-b border-white/5 px-4 py-3 sticky top-0 z-10 backdrop-blur-md">
+                        <div class="text-[10px] font-bold text-white tracking-widest font-display">AURA JEWELRY</div>
+                        <div class="flex space-x-3 text-slate-400 text-[9px]"><i data-lucide="shopping-cart" class="w-3.5 h-3.5 text-white"></i></div>
+                    </div>
+                    
+                    <!-- Hero Banner -->
+                    <div class="relative h-44 flex flex-col justify-end p-4 text-left overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(15,10,22,0.3) 0%, rgba(15,10,22,0.95) 100%), url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80');">
+                        <div class="space-y-1">
+                            <span class="text-[7px] text-yellow-400 uppercase tracking-widest font-semibold">Nueva Colección</span>
+                            <h4 class="text-xs font-bold text-white font-display">Brillo atemporal en cada detalle</h4>
+                            <span class="inline-block text-[7px] text-slate-300 border border-white/20 px-2 py-0.5 rounded mt-2">Comprar Joyas</span>
+                        </div>
+                    </div>
+
+                    <!-- Filtros Rápidos -->
+                    <div class="flex space-x-1.5 px-4 py-2.5 bg-[#0a070e] overflow-x-auto scrollbar-none border-b border-white/5">
+                        <span class="text-[7px] bg-purple-900/35 border border-purple-500/35 text-purple-300 font-bold px-2 py-0.5 rounded-full whitespace-nowrap">Anillos</span>
+                        <span class="text-[7px] bg-white/5 text-slate-400 px-2 py-0.5 rounded-full whitespace-nowrap">Collares</span>
+                        <span class="text-[7px] bg-white/5 text-slate-400 px-2 py-0.5 rounded-full whitespace-nowrap">Aros</span>
+                        <span class="text-[7px] bg-white/5 text-slate-400 px-2 py-0.5 rounded-full whitespace-nowrap">Pulseras</span>
+                    </div>
+
+                    <!-- Catálogo Grid -->
+                    <div class="p-4 grid grid-cols-2 gap-3 bg-[#0d0912]">
+                        <!-- Producto 1 -->
+                        <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-white/5 flex flex-col justify-between group/prod">
+                            <div class="h-24 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="p-2 space-y-1">
+                                <div class="text-[8px] font-bold text-white">Anillo Aura Diamantes</div>
+                                <div class="text-[7px] text-slate-500">Oro de 18 Quilates</div>
+                                <div class="flex justify-between items-center pt-1.5">
+                                    <span class="text-[9px] font-bold text-emerald-400 font-display">$124.500</span>
+                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 -->
+                        <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-white/5 flex flex-col justify-between group/prod">
+                            <div class="h-24 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="p-2 space-y-1">
+                                <div class="text-[8px] font-bold text-white">Collar Solitario Plata</div>
+                                <div class="text-[7px] text-slate-500">Diseño Geométrico</div>
+                                <div class="flex justify-between items-center pt-1.5">
+                                    <span class="text-[9px] font-bold text-emerald-400 font-display">$89.900</span>
+                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-white/5 flex flex-col justify-between group/prod">
+                            <div class="h-24 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="p-2 space-y-1">
+                                <div class="text-[8px] font-bold text-white">Aros Perlas Japonesas</div>
+                                <div class="text-[7px] text-slate-500">Perla de Cultivo Natural</div>
+                                <div class="flex justify-between items-center pt-1.5">
+                                    <span class="text-[9px] font-bold text-emerald-400 font-display">$75.000</span>
+                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-white/5 flex flex-col justify-between group/prod">
+                            <div class="h-24 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="p-2 space-y-1">
+                                <div class="text-[8px] font-bold text-white">Pulsera Infinity Plata</div>
+                                <div class="text-[7px] text-slate-500">Plata Esterlina 925</div>
+                                <div class="flex justify-between items-center pt-1.5">
+                                    <span class="text-[9px] font-bold text-emerald-400 font-display">$64.000</span>
+                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Promocional -->
+                    <div class="bg-[#0a070e] px-4 py-3 border-t border-white/5 text-center text-[7px] text-slate-500">
+                        💳 3 y 6 Cuotas Sin Interés — Envíos a todo el país gratis
+                    </div>
+                `
+            },
+            personal: {
+                title: 'Portfolio / Currículum Interactivo',
+                desc: 'Diseñado para programadores, fotógrafos, artistas, coaches o arquitectos. Muestra tu trabajo previo de manera hiper-visual, destaca tus habilidades clave y capta ofertas de trabajo o clientes independientes.',
+                url: 'https://simetrika.com/portfolio',
+                features: [
+                    'Showcase de trabajos con filtros de imagen',
+                    'Sección de perfil y trayectoria limpia',
+                    'Integración de links a GitHub, Behance, etc.',
+                    'Formulario de contacto de respuesta rápida'
+                ],
+                renderHtml: `
+                    <!-- Header -->
+                    <div class="flex justify-between items-center bg-[#090d16]/95 border-b border-white/5 px-4 py-3 sticky top-0 z-10 backdrop-blur-md">
+                        <div class="text-[10px] font-bold text-white tracking-wider font-display">CARLOS SILVA</div>
+                        <div class="h-1.5 w-1.5 rounded-full bg-cyan-400"></div>
+                    </div>
+                    
+                    <!-- Hero -->
+                    <div class="relative h-44 flex flex-col justify-center px-4 text-left overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(8,12,20,0.5) 0%, rgba(8,12,20,0.95) 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80');">
+                        <span class="text-[7px] text-cyan-400 font-bold uppercase tracking-widest">Estudio de Arquitectura</span>
+                        <h4 class="text-xs font-bold text-white mt-1 max-w-[190px] leading-tight font-display">Creamos espacios que inspiran tu vida diaria</h4>
+                        <span class="inline-block self-start text-[7px] bg-cyan-500 text-black font-bold px-2.5 py-0.5 rounded-full mt-2.5">Explorar Obras</span>
+                    </div>
+
+                    <!-- Perfil Brief -->
+                    <div class="p-4 flex items-center space-x-3 bg-slate-950/80 border-b border-white/5">
+                        <div class="w-12 h-12 rounded-full bg-cover bg-center border border-white/10 flex-shrink-0" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80');"></div>
+                        <div class="space-y-0.5">
+                            <div class="text-[9px] font-bold text-white">Carlos Silva — Arquitecto</div>
+                            <p class="text-[7px] text-slate-400 leading-normal font-light">Diseño arquitectónico con enfoque bioclimático y minimalismo constructivo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Galería de Obras -->
+                    <div class="p-4 bg-[#090d16] space-y-3">
+                        <span class="text-[8px] font-bold text-slate-500 uppercase block tracking-wider">Obras Destacadas</span>
+                        
+                        <div class="space-y-3">
+                            <!-- Obra 1 -->
+                            <div class="bg-slate-900 border border-white/5 rounded-xl overflow-hidden">
+                                <div class="h-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=300&q=80');"></div>
+                                <div class="p-2.5">
+                                    <div class="text-[8px] font-bold text-white">Casa Bosque — Córdoba</div>
+                                    <div class="text-[7px] text-cyan-400 mt-0.5">Finalizado en 2025</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Obra 2 -->
+                            <div class="bg-slate-900 border border-white/5 rounded-xl overflow-hidden">
+                                <div class="h-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=300&q=80');"></div>
+                                <div class="p-2.5">
+                                    <div class="text-[8px] font-bold text-white">Loft Industrial — Palermo</div>
+                                    <div class="text-[7px] text-cyan-400 mt-0.5">Finalizado en 2024</div>
+                                </div>
+                            </div>
+
+                            <!-- Obra 3 -->
+                            <div class="bg-slate-900 border border-white/5 rounded-xl overflow-hidden">
+                                <div class="h-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=300&q=80');"></div>
+                                <div class="p-2.5">
+                                    <div class="text-[8px] font-bold text-white">Hotel Terraza — Mendoza</div>
+                                    <div class="text-[7px] text-cyan-400 mt-0.5">Finalizado en 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contacto footer -->
+                    <div class="bg-slate-950 px-4 py-4 text-center border-t border-white/5 space-y-2">
+                        <div class="text-[8px] font-bold text-white">¿Tenés un proyecto en mente?</div>
+                        <span class="inline-block text-[7px] bg-white text-black font-bold px-3 py-1 rounded">Escríbeme</span>
+                    </div>
+                `
+            }
+        };
+
+        function switchTemplate(type) {
+            currentTemplate = type;
+            
+            // Actualizar botones de pestañas
+            document.querySelectorAll('.template-tab-btn').forEach(btn => {
+                btn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5";
+            });
+            const activeBtn = document.getElementById(`btn-${type}`);
+            activeBtn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-600/90 text-white border border-purple-500/30";
+
+            // Actualizar datos
+            const info = templateData[type];
+            document.getElementById('template-title').innerText = info.title;
+            document.getElementById('template-desc').innerText = info.desc;
+            document.getElementById('showcase-url').innerText = info.url;
+
+            // Limpiar y poblar features
+            const featuresContainer = document.getElementById('template-features');
+            featuresContainer.innerHTML = '';
+            info.features.forEach(feat => {
+                featuresContainer.innerHTML += `
+                    <li class="flex items-center space-x-2.5 text-sm text-slate-300">
+                        <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                        <span>${feat}</span>
+                    </li>
+                `;
+            });
+
+            // Actualizar render interno
+            const renderContent = document.getElementById('template-render-content');
+            renderContent.innerHTML = info.renderHtml;
+            
+            // Re-inicializar iconos de Lucide cargados dinámicamente
+            lucide.createIcons();
+        }
+
+        function toggleDeviceMode(mode) {
+            currentDevice = mode;
+            const container = document.getElementById('device-container');
+            const btnDesktop = document.getElementById('btn-device-desktop');
+            const btnMobile = document.getElementById('btn-device-mobile');
+
+            if (mode === 'desktop') {
+                container.style.maxWidth = '100%';
+                btnDesktop.className = "p-1.5 rounded-md bg-purple-600 text-white transition-all";
+                btnMobile.className = "p-1.5 rounded-md text-slate-400 hover:text-white transition-all";
+            } else {
+                container.style.maxWidth = '320px';
+                btnDesktop.className = "p-1.5 rounded-md text-slate-400 hover:text-white transition-all";
+                btnMobile.className = "p-1.5 rounded-md bg-purple-600 text-white transition-all";
+            }
+        }
+
+        // 3. Calculadora de ROI Interactiva
+        const sliderClientes = document.getElementById('slider-clientes');
+        const sliderValor = document.getElementById('slider-valor');
+        const valClientes = document.getElementById('val-clientes');
+        const valValor = document.getElementById('val-valor');
+        const totalRevenue = document.getElementById('total-revenue');
+        const totalLeads = document.getElementById('total-leads');
+
+        function updateRoi() {
+            const clientes = parseInt(sliderClientes.value);
+            const valor = parseInt(sliderValor.value);
+            
+            // Conversión fija asumida: 2.5%
+            const conversionRate = 0.025;
+            const leads = Math.round(clientes * conversionRate);
+            const revenue = leads * valor;
+
+            valClientes.innerText = `${clientes} visitas`;
+            valValor.innerText = `$${valor} USD`;
+
+            // Animación y cálculo
+            totalRevenue.innerText = `$${revenue.toLocaleString()} USD`;
+            totalLeads.innerText = `${leads} / mes`;
+        }
+
+        sliderClientes.addEventListener('input', updateRoi);
+        sliderValor.addEventListener('input', updateRoi);
+        
+        // Ejecutar inicialización de calculadora
+        updateRoi();
+
+        // 4. Lógica de Cotizador Paso a Paso (Wizard)
+        let currentStep = 1;
+        const totalSteps = 3;
+
+        function updateWizardUI() {
+            // Ocultar todos los contenidos de pasos
+            for (let i = 1; i <= totalSteps; i++) {
+                document.getElementById(`step-content-${i}`).classList.add('hidden');
+            }
+            // Mostrar el paso actual
+            document.getElementById(`step-content-${currentStep}`).classList.remove('hidden');
+
+            // Actualizar textos e indicadores
+            const stepTitles = ["Elegir Tipo de Negocio", "Definir Tu Objetivo", "Material y Textos"];
+            document.getElementById('step-number').innerText = `Paso ${currentStep} de ${totalSteps}`;
+            document.getElementById('step-title').innerText = stepTitles[currentStep - 1];
+
+            // Barra de progreso
+            const progressPercentage = (currentStep / totalSteps) * 100;
+            document.getElementById('wizard-progress').style.width = `${progressPercentage}%`;
+
+            // Botones
+            const prevBtn = document.getElementById('wizard-prev-btn');
+            const nextBtn = document.getElementById('wizard-next-btn');
+            const submitBtn = document.getElementById('wizard-submit-btn');
+
+            if (currentStep === 1) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            if (currentStep === totalSteps) {
+                nextBtn.classList.add('hidden');
+                submitBtn.classList.remove('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+                submitBtn.classList.add('hidden');
+            }
+        }
+
+        function wizardNext() {
+            if (currentStep < totalSteps) {
+                currentStep++;
+                updateWizardUI();
+            }
+        }
+
+        function wizardPrev() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateWizardUI();
+            }
+        }
+
+        function selectWizardCard(radioInput) {
+            // Quitar clase activa a todas las tarjetas del paso 1
+            const cards = document.querySelectorAll('#step-content-1 .wizard-card');
+            cards.forEach(c => {
+                c.className = "wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none";
+                c.querySelector('.wizard-check-indicator').className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center";
+                c.querySelector('.wizard-check-indicator').innerHTML = "";
+            });
+
+            // Añadir clase a seleccionada
+            const label = radioInput.closest('label');
+            label.className = "wizard-card cursor-pointer border border-purple-500 bg-purple-950/10 rounded-2xl p-6 flex flex-col justify-between hover:border-purple-500 transition-all select-none";
+            const check = label.querySelector('.wizard-check-indicator');
+            check.className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center";
+            check.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>';
+
+            lucide.createIcons();
+        }
+
+        function selectWizardGoal(radioInput) {
+            const cards = document.querySelectorAll('#step-content-2 .wizard-card-goal');
+            cards.forEach(c => {
+                c.className = "wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500/50 transition-all select-none";
+            });
+
+            const label = radioInput.closest('label');
+            label.className = "wizard-card-goal cursor-pointer border border-purple-500 bg-purple-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500 transition-all select-none";
+        }
+
+        function selectWizardContent(radioInput) {
+            const cards = document.querySelectorAll('#step-content-3 .wizard-card-content');
+            cards.forEach(c => {
+                c.className = "wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-purple-500/50 transition-all select-none";
+                c.querySelector('.wizard-check-indicator-content').className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center";
+                c.querySelector('.wizard-check-indicator-content').innerHTML = "";
+            });
+
+            const label = radioInput.closest('label');
+            label.className = "wizard-card-content cursor-pointer border border-purple-500 bg-purple-950/10 rounded-xl p-5 flex items-center justify-between hover:border-purple-500 transition-all select-none";
+            const check = label.querySelector('.wizard-check-indicator-content');
+            check.className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center";
+            check.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>';
+
+            lucide.createIcons();
+        }
+
+        function handleWizardSubmit(event) {
+            event.preventDefault();
+            
+            // Recoger valores del formulario
+            const form = document.getElementById('wizard-form');
+            const formData = new FormData(form);
+            const negocio = formData.get('negocio');
+            const objetivo = formData.get('objetivo');
+            const contenido = formData.get('contenido');
+
+            // Crear mensaje personalizado para WhatsApp
+            const message = `¡Hola Simetrika! Acabo de cotizar mi página web en su sitio interactivo.\n\n` +
+                            `*Detalles del Proyecto:*\n` +
+                            `• *Mi Negocio:* ${negocio}\n` +
+                            `• *Mi Objetivo Principal:* ${objetivo}\n` +
+                            `• *Mi Contenido:* ${contenido}\n\n` +
+                            `Me gustaría que me asesoren para comenzar en solo 3 días.`;
+            
+            // Codificar URI
+            const whatsappUrl = `https://wa.me/5491171571891?text=${encodeURIComponent(message)}`;
+            
+            // Redirigir a WhatsApp en nueva pestaña
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // 5. Acordeón FAQ
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            
+            if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                answer.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Cerrar todos los demás primero
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.maxHeight = '0px';
+                });
+                document.querySelectorAll('.faq-icon').forEach(ic => {
+                    ic.style.transform = 'rotate(0deg)';
+                });
+
+                // Abrir el seleccionado
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // 6. Animación al hacer Scroll (Intersection Observer)
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar el portfolio con el template corporativo por defecto
+            switchTemplate('corporativa');
+
+            const revealElements = document.querySelectorAll('section, .reveal-on-scroll');
+            
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            revealElements.forEach(el => {
+                el.classList.add('reveal-on-scroll');
+                revealObserver.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
