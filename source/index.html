@@ -184,6 +184,21 @@
 </head>
 <body class="bg-brand-dark font-sans text-slate-300 antialiased overflow-x-hidden selection:bg-emerald-500/30 selection:text-white">
 
+    <!-- Pantalla de Carga Mínima y Elegante -->
+    <div id="loading-screen" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#030705] transition-opacity duration-700 ease-in-out">
+        <div class="relative flex items-center justify-center w-20 h-20 mb-6">
+            <!-- Anillo giratorio exterior -->
+            <div class="absolute w-16 h-16 rounded-full border border-t-emerald-400 border-r-transparent border-b-transparent border-l-transparent animate-spin" style="animation-duration: 1.2s;"></div>
+            <!-- Anillo giratorio interior invertido -->
+            <div class="absolute w-12 h-12 rounded-full border border-b-teal-500 border-r-transparent border-t-transparent border-l-transparent animate-spin" style="animation-duration: 0.8s; animation-direction: reverse;"></div>
+            <!-- Punto central pulsante -->
+            <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.7)] animate-pulse"></div>
+        </div>
+        <div class="text-[10px] font-bold tracking-[0.3em] text-emerald-400/80 font-sans uppercase animate-pulse">
+            CARGANDO DATOS...
+        </div>
+    </div>
+
     <!-- Efectos Ambient Glow Fijos en Fondo -->
     <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-emerald-950 glow-blob animate-pulse-slow"></div>
     <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-teal-950 glow-blob animate-pulse-slow" style="animation-delay: -3s;"></div>
@@ -1118,6 +1133,19 @@
 
     <!-- Lógica de Interactividad en Javascript Vanilla -->
     <script>
+        // Pantalla de carga con duración mínima para suavizar la transición
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                setTimeout(() => {
+                    loadingScreen.classList.add('opacity-0', 'pointer-events-none');
+                    setTimeout(() => {
+                        loadingScreen.remove();
+                    }, 700);
+                }, 600);
+            }
+        });
+
         // Inicializar iconos de Lucide
         lucide.createIcons();
 
