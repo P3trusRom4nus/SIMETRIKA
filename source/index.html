@@ -39,12 +39,12 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#080c14',
-                            card: 'rgba(13, 20, 35, 0.6)',
-                            border: 'rgba(255, 255, 255, 0.08)',
-                            primary: '#10b981',   // Violeta
-                            secondary: '#14b8a6', // Cian
-                            accent: '#84cc16'     // Rosa
+                            dark: '#030705',      // Forest Black
+                            card: 'rgba(6, 12, 10, 0.6)', // Glassmorphic Forest Green Card
+                            border: 'rgba(255, 255, 255, 0.05)',
+                            primary: '#059669',   // Forest Emerald
+                            secondary: '#0d9488', // Forest Teal
+                            accent: '#10b981'     // Jade Green
                         }
                     },
                     animation: {
@@ -78,21 +78,21 @@
 
         /* Gradientes premium y texto brillante */
         .text-gradient-primary {
-            background: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #22d3ee 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #34d399 50%, #064e3b 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         
         .text-gradient-teal {
-            background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #2dd4bf 50%, #0f766e 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .text-gradient-emerald {
-            background: linear-gradient(135deg, #c084fc 0%, #84cc16 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #a7f3d0 50%, #047857 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -100,30 +100,30 @@
 
         /* Efecto Glassmorphism */
         .glass-card {
-            background: rgba(10, 17, 32, 0.7);
+            background: rgba(5, 10, 8, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         
         .glass-card:hover {
-            border-color: rgba(16, 185, 129, 0.3);
-            box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.15);
+            border-color: rgba(4, 120, 87, 0.3);
+            box-shadow: 0 20px 40px -15px rgba(4, 120, 87, 0.15);
             transform: translateY(-4px);
         }
 
         .glass-card-accent {
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(20, 184, 166, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(4, 120, 87, 0.12) 0%, rgba(13, 148, 136, 0.03) 100%);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(4, 120, 87, 0.2);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .glass-card-accent:hover {
-            border-color: rgba(16, 185, 129, 0.4);
-            box-shadow: 0 20px 45px -12px rgba(16, 185, 129, 0.25);
+            border-color: rgba(4, 120, 87, 0.4);
+            box-shadow: 0 20px 45px -12px rgba(4, 120, 87, 0.25);
             transform: translateY(-4px);
         }
 
@@ -132,12 +132,12 @@
             width: 10px;
         }
         ::-webkit-scrollbar-track {
-            background: #080c14;
+            background: #030705;
         }
         ::-webkit-scrollbar-thumb {
             background: rgba(16, 185, 129, 0.3);
             border-radius: 5px;
-            border: 2px solid #080c14;
+            border: 2px solid #030705;
         }
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(16, 185, 129, 0.6);
@@ -162,7 +162,7 @@
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, #10b981 0%, #84cc16 50%, #14b8a6 100%);
+            background: linear-gradient(135deg, #047857 0%, #10b981 50%, #0d9488 100%);
             z-index: -1;
             transition: opacity 0.5s ease;
         }
@@ -185,9 +185,9 @@
 <body class="bg-brand-dark font-sans text-slate-300 antialiased overflow-x-hidden selection:bg-emerald-500/30 selection:text-white">
 
     <!-- Efectos Ambient Glow Fijos en Fondo -->
-    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-emerald-700 glow-blob animate-pulse-slow"></div>
-    <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-teal-700 glow-blob animate-pulse-slow" style="animation-delay: -3s;"></div>
-    <div class="fixed top-[40%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-lime-700 glow-blob animate-pulse-slow" style="animation-delay: -5s;"></div>
+    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-emerald-950 glow-blob animate-pulse-slow"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-teal-950 glow-blob animate-pulse-slow" style="animation-delay: -3s;"></div>
+    <div class="fixed top-[40%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-emerald-950 glow-blob animate-pulse-slow" style="animation-delay: -5s;"></div>
 
     <!-- WhatsApp Flotante Ultra Premium -->
     <a href="https://wa.me/5491171571891?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" 
@@ -436,7 +436,7 @@
                 <!-- Tarjeta Bento 4 (Siempre abierto) -->
                 <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div class="space-y-6">
-                        <div class="w-14 h-14 bg-lime-500/15 border border-lime-500/25 rounded-2xl flex items-center justify-center text-lime-400 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-emerald-600/15 border border-emerald-600/25 rounded-2xl flex items-center justify-center text-emerald-300 group-hover:scale-110 transition-transform">
                             <i data-lucide="clock" class="w-7 h-7"></i>
                         </div>
                         <div class="space-y-3">
@@ -547,7 +547,7 @@
                         </div>
 
                         <!-- Render de la Web de Showcase -->
-                        <div id="device-container" class="relative mx-auto transition-all duration-500 w-full h-[360px] bg-[#080c14] rounded-2xl overflow-hidden border border-white/5 p-0 scrollbar-none group/device">
+                        <div id="device-container" class="relative mx-auto transition-all duration-500 w-full h-[360px] bg-[#030705] rounded-2xl overflow-hidden border border-white/5 p-0 scrollbar-none group/device">
                             <!-- Contenido del template interactivo -->
                             <div id="template-render-content" class="transition-transform duration-[12s] ease-in-out transform translate-y-0 group-hover/device:-translate-y-[calc(100%-360px)] pb-12 text-left">
                                 <!-- Se renderiza dinámicamente vía JS -->
@@ -663,12 +663,12 @@
             <!-- Grid de Proceso de 3 pasos -->
             <div class="grid md:grid-cols-3 gap-8 relative">
                 <!-- Línea de Conexión en Desktop -->
-                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-emerald-500/20 via-lime-500/20 to-teal-500/20 z-0"></div>
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-emerald-800/20 via-emerald-600/20 to-teal-800/20 z-0"></div>
                 
                 <!-- Paso 1 -->
                 <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 bg-gradient-to-tr from-emerald-600 to-indigo-500 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-emerald-900/30 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-emerald-800 to-emerald-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-emerald-950/30 group-hover:scale-110 transition-transform">
                             1
                         </div>
                         <h3 class="text-xl font-bold font-display text-white">Paso 1: Nos Contás tu Idea</h3>
@@ -685,7 +685,7 @@
                 <!-- Paso 2 -->
                 <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 bg-gradient-to-tr from-lime-500 to-rose-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-lime-900/30 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-teal-800 to-teal-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-teal-950/30 group-hover:scale-110 transition-transform">
                             2
                         </div>
                         <h3 class="text-xl font-bold font-display text-white">Paso 2: Construimos Tu Web</h3>
@@ -693,7 +693,7 @@
                             Nuestro equipo crea un prototipo premium exclusivo para ti. Registramos tu dominio, configuramos el servidor de alto rendimiento y el certificado SSL de seguridad.
                         </p>
                     </div>
-                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-lime-400">
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-emerald-400">
                         <i data-lucide="code" class="w-4 h-4"></i>
                         <span>Tiempo: 48 a 72 Horas</span>
                     </div>
@@ -702,7 +702,7 @@
                 <!-- Paso 3 -->
                 <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 bg-gradient-to-tr from-teal-500 to-blue-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-teal-900/30 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-emerald-900 to-teal-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-emerald-950/30 group-hover:scale-110 transition-transform">
                             3
                         </div>
                         <h3 class="text-xl font-bold font-display text-white">Paso 3: ¡Lanzamiento y Ventas!</h3>
@@ -768,7 +768,7 @@
     <section class="py-24 px-6 sm:px-8 relative border-t border-white/5 bg-slate-950/40">
         <div class="max-w-6xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-lime-400 font-display">Todo Incluido</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Todo Incluido</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
                     Sin sorpresas, ni <span class="text-gradient-emerald">costos ocultos</span>
                 </h2>
@@ -799,7 +799,7 @@
 
                 <!-- Tarjeta de característica 3 -->
                 <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
-                    <span class="p-3 bg-lime-500/10 rounded-xl text-lime-400"><i data-lucide="globe" class="w-5 h-5"></i></span>
+                    <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="globe" class="w-5 h-5"></i></span>
                     <div class="space-y-2">
                         <h4 class="text-base font-bold text-white font-display">Dominio e SSL Incluidos</h4>
                         <p class="text-xs text-slate-400 leading-relaxed font-light">Registramos tu dominio .com o .com.ar y activamos el candado de seguridad SSL.</p>
@@ -894,7 +894,7 @@
                             <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Negocio de Comida o Gastronomía" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
-                                    <span class="p-3 bg-lime-500/10 rounded-xl text-lime-400"><i data-lucide="coffee" class="w-6 h-6"></i></span>
+                                    <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="coffee" class="w-6 h-6"></i></span>
                                     <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
                                 </div>
                                 <div class="mt-6">
@@ -937,7 +937,7 @@
 
                             <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Exposición de Marca" class="hidden" onclick="selectWizardGoal(this)">
-                                <span class="p-4 bg-lime-500/10 rounded-full text-lime-400"><i data-lucide="eye" class="w-7 h-7"></i></span>
+                                <span class="p-4 bg-emerald-500/10 rounded-full text-emerald-400"><i data-lucide="eye" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Branding / Estatus</span>
                                 <span class="text-xs text-slate-400 font-light">Presentar tu empresa, historia y proyectos.</span>
                             </label>
@@ -1202,7 +1202,7 @@
                     </div>
 
                     <!-- Servicios -->
-                    <div class="p-4 space-y-3 bg-[#080c14]">
+                    <div class="p-4 space-y-3 bg-[#030705]">
                         <span class="text-[8px] font-bold text-slate-500 uppercase block tracking-wider">Nuestros Servicios</span>
                         <div class="grid grid-cols-2 gap-2.5">
                             <div class="bg-slate-900/60 p-2.5 rounded-lg border border-white/5 space-y-1.5">
@@ -1229,7 +1229,7 @@
                     </div>
 
                     <!-- Métricas -->
-                    <div class="grid grid-cols-3 gap-2 p-4 bg-[#080c14] text-center">
+                    <div class="grid grid-cols-3 gap-2 p-4 bg-[#030705] text-center">
                         <div class="bg-slate-900/40 p-2 rounded border border-white/5">
                             <div class="text-xs font-bold text-emerald-400 font-display">+150M</div>
                             <div class="text-[6px] text-slate-500 uppercase font-semibold">USD Administrados</div>
@@ -1239,7 +1239,7 @@
                             <div class="text-[6px] text-slate-500 uppercase font-semibold">Uptime SLA</div>
                         </div>
                         <div class="bg-slate-900/40 p-2 rounded border border-white/5">
-                            <div class="text-xs font-bold text-lime-400 font-display">12</div>
+                            <div class="text-xs font-bold text-emerald-400 font-display">12</div>
                             <div class="text-[6px] text-slate-500 uppercase font-semibold">Países Activos</div>
                         </div>
                     </div>
