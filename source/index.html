@@ -42,9 +42,9 @@
                             dark: '#080c14',
                             card: 'rgba(13, 20, 35, 0.6)',
                             border: 'rgba(255, 255, 255, 0.08)',
-                            primary: '#8b5cf6',   // Violeta
-                            secondary: '#06b6d4', // Cian
-                            accent: '#ec4899'     // Rosa
+                            primary: '#10b981',   // Violeta
+                            secondary: '#14b8a6', // Cian
+                            accent: '#84cc16'     // Rosa
                         }
                     },
                     animation: {
@@ -84,15 +84,15 @@
             background-clip: text;
         }
         
-        .text-gradient-cyan {
+        .text-gradient-teal {
             background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .text-gradient-purple {
-            background: linear-gradient(135deg, #c084fc 0%, #ec4899 100%);
+        .text-gradient-emerald {
+            background: linear-gradient(135deg, #c084fc 0%, #84cc16 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -108,22 +108,22 @@
         }
         
         .glass-card:hover {
-            border-color: rgba(139, 92, 246, 0.3);
-            box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.15);
+            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.15);
             transform: translateY(-4px);
         }
 
         .glass-card-accent {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(20, 184, 166, 0.05) 100%);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(139, 92, 246, 0.2);
+            border: 1px solid rgba(16, 185, 129, 0.2);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .glass-card-accent:hover {
-            border-color: rgba(139, 92, 246, 0.4);
-            box-shadow: 0 20px 45px -12px rgba(139, 92, 246, 0.25);
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 20px 45px -12px rgba(16, 185, 129, 0.25);
             transform: translateY(-4px);
         }
 
@@ -135,12 +135,12 @@
             background: #080c14;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(139, 92, 246, 0.3);
+            background: rgba(16, 185, 129, 0.3);
             border-radius: 5px;
             border: 2px solid #080c14;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(139, 92, 246, 0.6);
+            background: rgba(16, 185, 129, 0.6);
         }
 
         /* Ambient Glow en el fondo */
@@ -162,7 +162,7 @@
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #06b6d4 100%);
+            background: linear-gradient(135deg, #10b981 0%, #84cc16 50%, #14b8a6 100%);
             z-index: -1;
             transition: opacity 0.5s ease;
         }
@@ -182,12 +182,12 @@
         }
     </style>
 </head>
-<body class="bg-brand-dark font-sans text-slate-300 antialiased overflow-x-hidden selection:bg-purple-500/30 selection:text-white">
+<body class="bg-brand-dark font-sans text-slate-300 antialiased overflow-x-hidden selection:bg-emerald-500/30 selection:text-white">
 
     <!-- Efectos Ambient Glow Fijos en Fondo -->
-    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-purple-700 glow-blob animate-pulse-slow"></div>
-    <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-700 glow-blob animate-pulse-slow" style="animation-delay: -3s;"></div>
-    <div class="fixed top-[40%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-pink-700 glow-blob animate-pulse-slow" style="animation-delay: -5s;"></div>
+    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-emerald-700 glow-blob animate-pulse-slow"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-teal-700 glow-blob animate-pulse-slow" style="animation-delay: -3s;"></div>
+    <div class="fixed top-[40%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-lime-700 glow-blob animate-pulse-slow" style="animation-delay: -5s;"></div>
 
     <!-- WhatsApp Flotante Ultra Premium -->
     <a href="https://wa.me/5491171571891?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" 
@@ -206,10 +206,10 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logotipo -->
                 <a href="#" class="flex items-center space-x-2 group">
-                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-cyan-500 flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.3)] transition-transform group-hover:scale-105">
+                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-transform group-hover:scale-105">
                         <i data-lucide="layers" class="w-5 h-5 text-white"></i>
                     </span>
-                    <span class="text-2xl font-bold font-display tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all">Simetrika</span>
+                    <span class="text-2xl font-bold font-display tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:to-teal-400 transition-all">Simetrika</span>
                 </a>
                 
                 <!-- Navegación de Escritorio -->
@@ -222,7 +222,7 @@
 
                 <!-- Botón CTA en Navbar -->
                 <div class="hidden md:flex items-center">
-                    <a href="#cotizador" class="gradient-btn px-6 py-2.5 rounded-full font-semibold text-sm text-white shadow-[0_4px_20px_rgba(139,92,246,0.25)] hover:shadow-[0_4px_30px_rgba(139,92,246,0.4)] transition-all">
+                    <a href="#cotizador" class="gradient-btn px-6 py-2.5 rounded-full font-semibold text-sm text-white shadow-[0_4px_20px_rgba(16,185,129,0.25)] hover:shadow-[0_4px_30px_rgba(16,185,129,0.4)] transition-all">
                         Cotizar Mi Web
                     </a>
                 </div>
@@ -240,7 +240,7 @@
             <a href="#portafolio" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Diseños</a>
             <a href="#calculadora" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Calculadora</a>
             <a href="#proceso" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Proceso</a>
-            <a href="#cotizador" class="gradient-btn w-full text-center py-3.5 rounded-full font-semibold text-white mt-4 block shadow-[0_4px_20px_rgba(139,92,246,0.25)]">
+            <a href="#cotizador" class="gradient-btn w-full text-center py-3.5 rounded-full font-semibold text-white mt-4 block shadow-[0_4px_20px_rgba(16,185,129,0.25)]">
                 Cotizar Mi Web
             </a>
         </div>
@@ -253,12 +253,12 @@
             <!-- Texto del Hero -->
             <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
                 <!-- Badge Premium -->
-                <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/25 px-4 py-2 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.08)]">
+                <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/25 px-4 py-2 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.08)]">
                     <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
                     </span>
-                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">⚡ Tu Web en tiempo récord</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">⚡ Tu Web en tiempo récord</span>
                 </div>
                 
                 <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-display leading-[1.05] text-white tracking-tight">
@@ -271,7 +271,7 @@
                 
                 <!-- Acciones -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-2">
-                    <a href="#cotizador" class="gradient-btn w-full sm:w-auto px-8 py-4 rounded-full text-lg font-semibold text-white text-center hover-lift shadow-[0_10px_30px_-5px_rgba(139,92,246,0.3)]">
+                    <a href="#cotizador" class="gradient-btn w-full sm:w-auto px-8 py-4 rounded-full text-lg font-semibold text-white text-center hover-lift shadow-[0_10px_30px_-5px_rgba(16,185,129,0.3)]">
                         Quiero mi Página Web
                     </a>
                     <a href="#beneficios" class="w-full sm:w-auto glass-card px-8 py-4 rounded-full text-lg font-semibold text-white text-center hover:bg-white/5 transition flex items-center justify-center space-x-2">
@@ -301,7 +301,7 @@
             <div class="lg:col-span-5 relative mt-8 lg:mt-0">
                 <div class="relative mx-auto max-w-[380px] sm:max-w-[420px] lg:max-w-none">
                     <!-- Decoración brillante detrás del mockup -->
-                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-cyan-500 rounded-3xl blur-2xl opacity-20 transform -rotate-6 scale-95 pointer-events-none"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-20 transform -rotate-6 scale-95 pointer-events-none"></div>
                     
                     <!-- Elemento 3D / Mockup de Sitio Web en CSS -->
                     <div class="relative glass-card-accent p-4 rounded-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform hover:rotate-2 hover:scale-[1.02] transition-all duration-500">
@@ -316,7 +316,7 @@
                         <div class="bg-[#0b0f19] rounded-xl p-4 space-y-4 overflow-hidden border border-white/5">
                             <!-- Hero interno simulado -->
                             <div class="space-y-2 py-4 text-center">
-                                <div class="w-16 h-4 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[8px] font-bold rounded-full mx-auto flex items-center justify-center">NUEVO PRODUCTO</div>
+                                <div class="w-16 h-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[8px] font-bold rounded-full mx-auto flex items-center justify-center">NUEVO PRODUCTO</div>
                                 <div class="h-6 w-3/4 bg-gradient-to-r from-white to-slate-400 rounded-md mx-auto"></div>
                                 <div class="h-3 w-1/2 bg-slate-700/50 rounded-md mx-auto"></div>
                             </div>
@@ -329,25 +329,25 @@
                                         <span class="text-[8px] text-emerald-400 font-bold">+18%</span>
                                     </div>
                                     <div class="w-full bg-slate-800 h-1.5 rounded-full mt-2 overflow-hidden">
-                                        <div class="bg-gradient-to-r from-purple-500 to-cyan-500 h-full rounded-full" style="width: 75%"></div>
+                                        <div class="bg-gradient-to-r from-emerald-500 to-teal-500 h-full rounded-full" style="width: 75%"></div>
                                     </div>
                                 </div>
                                 <div class="bg-slate-900/80 p-3 rounded-lg border border-white/5">
                                     <span class="text-[9px] text-slate-500 block uppercase font-bold">Conversiones</span>
                                     <div class="flex items-baseline space-x-1.5 mt-1">
                                         <span class="text-sm font-bold text-white font-display">4.2%</span>
-                                        <span class="text-[8px] text-purple-400 font-bold">Óptimo</span>
+                                        <span class="text-[8px] text-emerald-400 font-bold">Óptimo</span>
                                     </div>
                                     <div class="flex space-x-1 items-end h-6 mt-1.5">
                                         <span class="bg-slate-800 w-full h-[30%] rounded-sm"></span>
-                                        <span class="bg-purple-500/50 w-full h-[60%] rounded-sm"></span>
-                                        <span class="bg-purple-500 w-full h-[85%] rounded-sm"></span>
-                                        <span class="bg-cyan-500 w-full h-[100%] rounded-sm"></span>
+                                        <span class="bg-emerald-500/50 w-full h-[60%] rounded-sm"></span>
+                                        <span class="bg-emerald-500 w-full h-[85%] rounded-sm"></span>
+                                        <span class="bg-teal-500 w-full h-[100%] rounded-sm"></span>
                                     </div>
                                 </div>
                             </div>
                             <!-- CTA simulado -->
-                            <div class="bg-gradient-to-r from-purple-600 to-cyan-500 rounded-lg py-2.5 text-center text-[10px] font-bold text-white shadow-lg shadow-purple-900/35">
+                            <div class="bg-gradient-to-r from-emerald-600 to-teal-500 rounded-lg py-2.5 text-center text-[10px] font-bold text-white shadow-lg shadow-emerald-900/35">
                                 Ver Catálogo Online
                             </div>
                         </div>
@@ -386,7 +386,7 @@
                 <!-- Tarjeta Bento 1 (Grande - 2 columnas en MD) -->
                 <div class="glass-card-accent p-8 rounded-2xl md:col-span-2 flex flex-col justify-between group">
                     <div class="space-y-6">
-                        <div class="w-14 h-14 bg-purple-500/15 border border-purple-500/25 rounded-2xl flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-emerald-500/15 border border-emerald-500/25 rounded-2xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                             <i data-lucide="search" class="w-7 h-7"></i>
                         </div>
                         <div class="space-y-3">
@@ -396,7 +396,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mt-8 pt-6 border-t border-white/5 flex items-center space-x-2 text-purple-400 text-sm font-semibold group-hover:translate-x-1.5 transition-transform duration-300">
+                    <div class="mt-8 pt-6 border-t border-white/5 flex items-center space-x-2 text-emerald-400 text-sm font-semibold group-hover:translate-x-1.5 transition-transform duration-300">
                         <span>Aprender más sobre SEO</span>
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </div>
@@ -404,15 +404,15 @@
                 
                 <!-- Tarjeta Bento 2 (Estadística Vertical) -->
                 <div class="glass-card p-8 rounded-2xl flex flex-col justify-between text-center relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-gradient-to-b from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="space-y-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-purple-400 font-display">Estadística Probada</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Estadística Probada</span>
                         <div class="text-7xl font-extrabold font-display text-white text-gradient-primary tracking-tight">+300%</div>
                         <p class="text-sm text-slate-400 font-light">
                             De incremento promedio en consultas directas que reciben los negocios tradicionales al implementar una landing profesional frente a quienes solo usan perfiles sociales.
                         </p>
                     </div>
-                    <div class="mt-8 p-3.5 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 text-xs font-semibold">
+                    <div class="mt-8 p-3.5 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-300 text-xs font-semibold">
                         📈 Clientes más calificados
                     </div>
                 </div>
@@ -420,7 +420,7 @@
                 <!-- Tarjeta Bento 3 (Credibilidad) -->
                 <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div class="space-y-6">
-                        <div class="w-14 h-14 bg-cyan-500/15 border border-cyan-500/25 rounded-2xl flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-teal-500/15 border border-teal-500/25 rounded-2xl flex items-center justify-center text-teal-400 group-hover:scale-110 transition-transform">
                             <i data-lucide="shield-check" class="w-7 h-7"></i>
                         </div>
                         <div class="space-y-3">
@@ -436,7 +436,7 @@
                 <!-- Tarjeta Bento 4 (Siempre abierto) -->
                 <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div class="space-y-6">
-                        <div class="w-14 h-14 bg-pink-500/15 border border-pink-500/25 rounded-2xl flex items-center justify-center text-pink-400 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-lime-500/15 border border-lime-500/25 rounded-2xl flex items-center justify-center text-lime-400 group-hover:scale-110 transition-transform">
                             <i data-lucide="clock" class="w-7 h-7"></i>
                         </div>
                         <div class="space-y-3">
@@ -472,9 +472,9 @@
     <section id="portafolio" class="py-24 px-6 sm:px-8 relative">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">Estilo e Innovación</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">Estilo e Innovación</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
-                    Diseños que <span class="text-gradient-cyan">Enamoran</span> y Venden
+                    Diseños que <span class="text-gradient-teal">Enamoran</span> y Venden
                 </h2>
                 <p class="text-lg text-slate-400 font-light">
                     Explora ejemplos de layouts profesionales que adaptamos a la identidad de tu marca para optimizar la experiencia de usuario.
@@ -482,7 +482,7 @@
                 
                 <!-- Selector de categorías de plantillas -->
                 <div class="flex justify-center space-x-2 pt-4">
-                    <button onclick="switchTemplate('corporativa')" id="btn-corporativa" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-600/90 text-white border border-purple-500/30">
+                    <button onclick="switchTemplate('corporativa')" id="btn-corporativa" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-emerald-600/90 text-white border border-emerald-500/30">
                         Corporativa / Servicios
                     </button>
                     <button onclick="switchTemplate('tienda')" id="btn-tienda" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5">
@@ -537,7 +537,7 @@
                             </div>
                             <!-- Switcher Móvil vs Desktop Simulado -->
                             <div class="flex bg-slate-900 border border-white/10 rounded-lg p-0.5">
-                                <button onclick="toggleDeviceMode('desktop')" id="btn-device-desktop" class="p-1.5 rounded-md bg-purple-600 text-white transition-all">
+                                <button onclick="toggleDeviceMode('desktop')" id="btn-device-desktop" class="p-1.5 rounded-md bg-emerald-600 text-white transition-all">
                                     <i data-lucide="monitor" class="w-4 h-4"></i>
                                 </button>
                                 <button onclick="toggleDeviceMode('mobile')" id="btn-device-mobile" class="p-1.5 rounded-md text-slate-400 hover:text-white transition-all">
@@ -565,9 +565,9 @@
     <section id="calculadora" class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-purple-400 font-display">Retorno de Inversión</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Retorno de Inversión</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
-                    Calcula el Impacto en tu <span class="text-gradient-purple">Negocio</span>
+                    Calcula el Impacto en tu <span class="text-gradient-emerald">Negocio</span>
                 </h2>
                 <p class="text-lg text-slate-400 font-light">
                     Una página web no es un gasto, es una inversión. Usa este simulador interactivo para visualizar el potencial de facturación mensual que estás perdiendo por no estar online.
@@ -586,7 +586,7 @@
                             <span id="val-clientes" class="text-lg font-bold font-display text-white">500</span>
                         </div>
                         <input type="range" id="slider-clientes" min="100" max="5000" step="100" value="1000" 
-                               class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-purple-500 focus:outline-none">
+                               class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-500 focus:outline-none">
                         <div class="flex justify-between text-[10px] text-slate-500 font-medium">
                             <span>100 visitas</span>
                             <span>5.000 visitas</span>
@@ -600,7 +600,7 @@
                             <span id="val-valor" class="text-lg font-bold font-display text-white">$50 USD</span>
                         </div>
                         <input type="range" id="slider-valor" min="5" max="500" step="5" value="50" 
-                               class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-500 focus:outline-none">
+                               class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-teal-500 focus:outline-none">
                         <div class="flex justify-between text-[10px] text-slate-500 font-medium">
                             <span>$5 USD</span>
                             <span>$500 USD</span>
@@ -609,7 +609,7 @@
 
                     <!-- Nota aclaratoria -->
                     <div class="bg-brand-dark/50 border border-white/5 rounded-xl p-4 flex items-start space-x-3">
-                        <i data-lucide="info" class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                        <i data-lucide="info" class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5"></i>
                         <p class="text-xs text-slate-400 leading-relaxed font-light">
                             Asumimos una tasa de conversión promedio conservadora de tan solo <strong>2.5%</strong> (visitas que te contactan por WhatsApp o compran).
                         </p>
@@ -618,7 +618,7 @@
 
                 <!-- Display de Resultados -->
                 <div class="bg-slate-900/80 border border-white/10 rounded-2xl p-6 text-center space-y-6 shadow-2xl relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-cyan-500/10"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-transparent to-teal-500/10"></div>
                     <div>
                         <span class="text-xs font-bold uppercase tracking-wider text-slate-400 font-display">Facturación Adicional Estimada</span>
                         <div id="total-revenue" class="text-5xl md:text-6xl font-black font-display text-white mt-2 tracking-tight text-gradient-primary">
@@ -638,7 +638,7 @@
                         </div>
                     </div>
 
-                    <a href="#cotizador" class="gradient-btn w-full py-4 rounded-xl font-bold text-white block text-sm shadow-lg hover:shadow-purple-500/20 transition-all">
+                    <a href="#cotizador" class="gradient-btn w-full py-4 rounded-xl font-bold text-white block text-sm shadow-lg hover:shadow-emerald-500/20 transition-all">
                         Captar este potencial ahora
                     </a>
                 </div>
@@ -651,9 +651,9 @@
     <section id="proceso" class="py-24 px-6 sm:px-8 relative">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">Velocidad y Eficiencia</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">Velocidad y Eficiencia</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
-                    Simple, Rápido y <span class="text-gradient-cyan">Garantizado</span>
+                    Simple, Rápido y <span class="text-gradient-teal">Garantizado</span>
                 </h2>
                 <p class="text-lg text-slate-400 font-light">
                     Nos encargamos del diseño, la programación y la configuración de servidores. Vos solo esperás los resultados.
@@ -663,12 +663,12 @@
             <!-- Grid de Proceso de 3 pasos -->
             <div class="grid md:grid-cols-3 gap-8 relative">
                 <!-- Línea de Conexión en Desktop -->
-                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20 z-0"></div>
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-emerald-500/20 via-lime-500/20 to-teal-500/20 z-0"></div>
                 
                 <!-- Paso 1 -->
                 <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 bg-gradient-to-tr from-purple-600 to-indigo-500 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-purple-900/30 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-emerald-600 to-indigo-500 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-emerald-900/30 group-hover:scale-110 transition-transform">
                             1
                         </div>
                         <h3 class="text-xl font-bold font-display text-white">Paso 1: Nos Contás tu Idea</h3>
@@ -676,7 +676,7 @@
                             Hablamos por WhatsApp de forma dinámica. Nos contás qué hace tu negocio, tu público objetivo y tus preferencias visuales. Sin cuestionarios técnicos complejos.
                         </p>
                     </div>
-                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-purple-400">
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-emerald-400">
                         <i data-lucide="message-square" class="w-4 h-4"></i>
                         <span>Demora: ~10 minutos</span>
                     </div>
@@ -685,7 +685,7 @@
                 <!-- Paso 2 -->
                 <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 bg-gradient-to-tr from-pink-500 to-rose-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-pink-900/30 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-lime-500 to-rose-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-lime-900/30 group-hover:scale-110 transition-transform">
                             2
                         </div>
                         <h3 class="text-xl font-bold font-display text-white">Paso 2: Construimos Tu Web</h3>
@@ -693,7 +693,7 @@
                             Nuestro equipo crea un prototipo premium exclusivo para ti. Registramos tu dominio, configuramos el servidor de alto rendimiento y el certificado SSL de seguridad.
                         </p>
                     </div>
-                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-pink-400">
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-lime-400">
                         <i data-lucide="code" class="w-4 h-4"></i>
                         <span>Tiempo: 48 a 72 Horas</span>
                     </div>
@@ -702,7 +702,7 @@
                 <!-- Paso 3 -->
                 <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 bg-gradient-to-tr from-cyan-500 to-blue-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-cyan-900/30 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-teal-500 to-blue-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-teal-900/30 group-hover:scale-110 transition-transform">
                             3
                         </div>
                         <h3 class="text-xl font-bold font-display text-white">Paso 3: ¡Lanzamiento y Ventas!</h3>
@@ -710,7 +710,7 @@
                             Publicamos tu página y la enlazamos a tu WhatsApp y redes sociales. Empiezas a capturar contactos y a posicionar tu negocio de manera profesional en Google.
                         </p>
                     </div>
-                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-cyan-400">
+                    <div class="pt-4 flex items-center space-x-2 text-xs font-semibold text-teal-400">
                         <i data-lucide="rocket" class="w-4 h-4"></i>
                         <span>¡Tu negocio online para siempre!</span>
                     </div>
@@ -724,7 +724,7 @@
         <div class="max-w-5xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-extrabold font-display text-white">
-                    "¿No es suficiente con <span class="text-gradient-purple">Instagram o Facebook</span>?"
+                    "¿No es suficiente con <span class="text-gradient-emerald">Instagram o Facebook</span>?"
                 </h2>
                 <p class="text-base text-slate-400 font-light">
                     Las redes sociales son fantásticos canales de atención, pero no deben ser los pilares de tu marca. Aquí la gran diferencia:
@@ -735,7 +735,7 @@
             <div class="glass-card rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
                 <div class="grid grid-cols-12 bg-slate-950/60 p-4 border-b border-white/10 font-bold text-sm text-white select-none">
                     <div class="col-span-6">Característica</div>
-                    <div class="col-span-3 text-center text-purple-400">Página Web Propia</div>
+                    <div class="col-span-3 text-center text-emerald-400">Página Web Propia</div>
                     <div class="col-span-3 text-center text-slate-500">Solo Redes Sociales</div>
                 </div>
                 <div class="divide-y divide-white/5 font-light text-sm">
@@ -768,9 +768,9 @@
     <section class="py-24 px-6 sm:px-8 relative border-t border-white/5 bg-slate-950/40">
         <div class="max-w-6xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-pink-400 font-display">Todo Incluido</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-lime-400 font-display">Todo Incluido</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
-                    Sin sorpresas, ni <span class="text-gradient-purple">costos ocultos</span>
+                    Sin sorpresas, ni <span class="text-gradient-emerald">costos ocultos</span>
                 </h2>
                 <p class="text-lg text-slate-400 font-light">
                     Creamos una solución llave en mano lista para funcionar. No tenés que configurar absolutamente nada.
@@ -781,7 +781,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Tarjeta de característica 1 -->
                 <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
-                    <span class="p-3 bg-purple-500/10 rounded-xl text-purple-400"><i data-lucide="layout" class="w-5 h-5"></i></span>
+                    <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="layout" class="w-5 h-5"></i></span>
                     <div class="space-y-2">
                         <h4 class="text-base font-bold text-white font-display">Diseño Exclusivo</h4>
                         <p class="text-xs text-slate-400 leading-relaxed font-light">Estructura adaptada específicamente a tu modelo de negocio y manual de marca.</p>
@@ -790,7 +790,7 @@
 
                 <!-- Tarjeta de característica 2 -->
                 <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
-                    <span class="p-3 bg-cyan-500/10 rounded-xl text-cyan-400"><i data-lucide="smartphone" class="w-5 h-5"></i></span>
+                    <span class="p-3 bg-teal-500/10 rounded-xl text-teal-400"><i data-lucide="smartphone" class="w-5 h-5"></i></span>
                     <div class="space-y-2">
                         <h4 class="text-base font-bold text-white font-display">100% Mobile First</h4>
                         <p class="text-xs text-slate-400 leading-relaxed font-light">El 80% de tus visitas entrarán desde su celular. Tu web cargará de forma perfecta.</p>
@@ -799,7 +799,7 @@
 
                 <!-- Tarjeta de característica 3 -->
                 <div class="glass-card p-6 rounded-2xl flex items-start space-x-4">
-                    <span class="p-3 bg-pink-500/10 rounded-xl text-pink-400"><i data-lucide="globe" class="w-5 h-5"></i></span>
+                    <span class="p-3 bg-lime-500/10 rounded-xl text-lime-400"><i data-lucide="globe" class="w-5 h-5"></i></span>
                     <div class="space-y-2">
                         <h4 class="text-base font-bold text-white font-display">Dominio e SSL Incluidos</h4>
                         <p class="text-xs text-slate-400 leading-relaxed font-light">Registramos tu dominio .com o .com.ar y activamos el candado de seguridad SSL.</p>
@@ -840,7 +840,7 @@
     <section id="cotizador" class="py-24 px-6 sm:px-8 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-purple-400 font-display">Comienza Hoy Mismo</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Comienza Hoy Mismo</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
                     Cotiza tu Página en <span class="text-gradient-primary">60 Segundos</span>
                 </h2>
@@ -852,12 +852,12 @@
             <!-- Interfaz del configurador multi-paso -->
             <div class="glass-card-accent p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-1.5 bg-slate-900">
-                    <div id="wizard-progress" class="h-full bg-gradient-to-r from-purple-500 to-cyan-400 transition-all duration-500" style="width: 33%"></div>
+                    <div id="wizard-progress" class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-500" style="width: 33%"></div>
                 </div>
 
                 <!-- Indicador de pasos -->
                 <div class="flex justify-between items-center text-xs font-bold uppercase tracking-wider text-slate-500 mb-8 font-display">
-                    <span id="step-number" class="text-purple-400">Paso 1 de 3</span>
+                    <span id="step-number" class="text-emerald-400">Paso 1 de 3</span>
                     <span id="step-title">Elegir Tipo de Negocio</span>
                 </div>
 
@@ -867,11 +867,11 @@
                     <div id="step-content-1" class="wizard-step space-y-6">
                         <h3 class="text-xl font-bold text-white font-display">¿A qué se dedica tu negocio o emprendimiento?</h3>
                         <div class="grid sm:grid-cols-2 gap-4">
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Servicios Profesionales" class="hidden" checked onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
-                                    <span class="p-3 bg-purple-500/10 rounded-xl text-purple-400"><i data-lucide="briefcase" class="w-6 h-6"></i></span>
-                                    <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
+                                    <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="briefcase" class="w-6 h-6"></i></span>
+                                    <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
                                 </div>
                                 <div class="mt-6">
                                     <span class="text-lg font-bold text-white font-display block">Servicios / Consultoría</span>
@@ -879,10 +879,10 @@
                                 </div>
                             </label>
                             
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Tienda Online o Catálogo" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
-                                    <span class="p-3 bg-cyan-500/10 rounded-xl text-cyan-400"><i data-lucide="shopping-bag" class="w-6 h-6"></i></span>
+                                    <span class="p-3 bg-teal-500/10 rounded-xl text-teal-400"><i data-lucide="shopping-bag" class="w-6 h-6"></i></span>
                                     <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
                                 </div>
                                 <div class="mt-6">
@@ -891,10 +891,10 @@
                                 </div>
                             </label>
 
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Negocio de Comida o Gastronomía" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
-                                    <span class="p-3 bg-pink-500/10 rounded-xl text-pink-400"><i data-lucide="coffee" class="w-6 h-6"></i></span>
+                                    <span class="p-3 bg-lime-500/10 rounded-xl text-lime-400"><i data-lucide="coffee" class="w-6 h-6"></i></span>
                                     <span class="wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center"></span>
                                 </div>
                                 <div class="mt-6">
@@ -903,7 +903,7 @@
                                 </div>
                             </label>
 
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Marca Personal o Portfolio" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
                                     <span class="p-3 bg-blue-500/10 rounded-xl text-blue-400"><i data-lucide="user" class="w-6 h-6"></i></span>
@@ -921,23 +921,23 @@
                     <div id="step-content-2" class="wizard-step hidden space-y-6">
                         <h3 class="text-xl font-bold text-white font-display">¿Cuál es el objetivo principal de tu nueva web?</h3>
                         <div class="grid sm:grid-cols-3 gap-4">
-                            <label class="wizard-card-goal cursor-pointer border border-purple-500/50 bg-purple-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500 transition-all select-none">
+                            <label class="wizard-card-goal cursor-pointer border border-emerald-500/50 bg-emerald-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Captar Clientes" class="hidden" checked onclick="selectWizardGoal(this)">
-                                <span class="p-4 bg-purple-500/10 rounded-full text-purple-400"><i data-lucide="phone-call" class="w-7 h-7"></i></span>
+                                <span class="p-4 bg-emerald-500/10 rounded-full text-emerald-400"><i data-lucide="phone-call" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Recibir Consultas</span>
                                 <span class="text-xs text-slate-400 font-light">Llamadas y chats de potenciales clientes.</span>
                             </label>
                             
-                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500/50 transition-all select-none">
+                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Vender Directamente" class="hidden" onclick="selectWizardGoal(this)">
-                                <span class="p-4 bg-cyan-500/10 rounded-full text-cyan-400"><i data-lucide="credit-card" class="w-7 h-7"></i></span>
+                                <span class="p-4 bg-teal-500/10 rounded-full text-teal-400"><i data-lucide="credit-card" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Vender Online</span>
                                 <span class="text-xs text-slate-400 font-light">Procesar pagos o pedidos directos de productos.</span>
                             </label>
 
-                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500/50 transition-all select-none">
+                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Exposición de Marca" class="hidden" onclick="selectWizardGoal(this)">
-                                <span class="p-4 bg-pink-500/10 rounded-full text-pink-400"><i data-lucide="eye" class="w-7 h-7"></i></span>
+                                <span class="p-4 bg-lime-500/10 rounded-full text-lime-400"><i data-lucide="eye" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Branding / Estatus</span>
                                 <span class="text-xs text-slate-400 font-light">Presentar tu empresa, historia y proyectos.</span>
                             </label>
@@ -948,22 +948,22 @@
                     <div id="step-content-3" class="wizard-step hidden space-y-6">
                         <h3 class="text-xl font-bold text-white font-display">¿Contás con contenido listo para subir?</h3>
                         <div class="space-y-4">
-                            <label class="wizard-card-content cursor-pointer border border-purple-500/50 bg-purple-950/10 rounded-xl p-5 flex items-center justify-between hover:border-purple-500 transition-all select-none">
+                            <label class="wizard-card-content cursor-pointer border border-emerald-500/50 bg-emerald-950/10 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500 transition-all select-none">
                                 <div class="flex items-center space-x-4">
                                     <input type="radio" name="contenido" value="Tengo Logo y Textos Listos" class="hidden" checked onclick="selectWizardContent(this)">
-                                    <span class="p-3 bg-purple-500/10 rounded-lg text-purple-400"><i data-lucide="file-text" class="w-5 h-5"></i></span>
+                                    <span class="p-3 bg-emerald-500/10 rounded-lg text-emerald-400"><i data-lucide="file-text" class="w-5 h-5"></i></span>
                                     <div class="text-left">
                                         <span class="text-sm font-bold text-white block">Tengo logotipo y textos iniciales</span>
                                         <span class="text-xs text-slate-400">Podemos acelerar el desarrollo del diseño de inmediato.</span>
                                     </div>
                                 </div>
-                                <span class="wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
+                                <span class="wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
                             </label>
 
-                            <label class="wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-purple-500/50 transition-all select-none">
+                            <label class="wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500/50 transition-all select-none">
                                 <div class="flex items-center space-x-4">
                                     <input type="radio" name="contenido" value="Necesito Ayuda Con El Contenido" class="hidden" onclick="selectWizardContent(this)">
-                                    <span class="p-3 bg-cyan-500/10 rounded-lg text-cyan-400"><i data-lucide="edit" class="w-5 h-5"></i></span>
+                                    <span class="p-3 bg-teal-500/10 rounded-lg text-teal-400"><i data-lucide="edit" class="w-5 h-5"></i></span>
                                     <div class="text-left">
                                         <span class="text-sm font-bold text-white block">Necesito ayuda (No tengo textos ni logo)</span>
                                         <span class="text-xs text-slate-400">Te asesoramos y redactamos tus secciones con copywriting profesional.</span>
@@ -979,10 +979,10 @@
                         <button type="button" id="wizard-prev-btn" onclick="wizardPrev()" class="hidden px-6 py-3 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-all">
                             Atrás
                         </button>
-                        <button type="button" id="wizard-next-btn" onclick="wizardNext()" class="gradient-btn px-8 py-3.5 rounded-full font-bold text-sm text-white shadow-lg shadow-purple-900/30 ml-auto">
+                        <button type="button" id="wizard-next-btn" onclick="wizardNext()" class="gradient-btn px-8 py-3.5 rounded-full font-bold text-sm text-white shadow-lg shadow-emerald-900/30 ml-auto">
                             Continuar
                         </button>
-                        <button type="submit" id="wizard-submit-btn" class="hidden gradient-btn px-8 py-3.5 rounded-full font-bold text-sm text-white shadow-lg shadow-purple-900/30 ml-auto flex items-center space-x-2">
+                        <button type="submit" id="wizard-submit-btn" class="hidden gradient-btn px-8 py-3.5 rounded-full font-bold text-sm text-white shadow-lg shadow-emerald-900/30 ml-auto flex items-center space-x-2">
                             <span>Enviar por WhatsApp</span>
                             <i data-lucide="send" class="w-4 h-4"></i>
                         </button>
@@ -996,9 +996,9 @@
     <section class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 font-display">Preguntas Frecuentes</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">Preguntas Frecuentes</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold font-display text-white">
-                    Despeja tus <span class="text-gradient-cyan">dudas</span> antes de empezar
+                    Despeja tus <span class="text-gradient-teal">dudas</span> antes de empezar
                 </h2>
                 <p class="text-base text-slate-400 font-light">
                     Respondemos las consultas más recurrentes sobre nuestro servicio express de desarrollo web.
@@ -1069,7 +1069,7 @@
             <!-- Columna Logo/Propósito -->
             <div class="space-y-4 md:col-span-2">
                 <a href="#" class="flex items-center space-x-2">
-                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-cyan-500 flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.3)]">
+                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center shadow-[0_0_20px_rgba(16,185,129,0.3)]">
                         <i data-lucide="layers" class="w-5 h-5 text-white"></i>
                     </span>
                     <span class="text-2xl font-bold font-display tracking-tight text-white">Simetrika</span>
@@ -1078,9 +1078,9 @@
                     Llevamos tu negocio tradicional a la era digital mediante landings y sitios web de altísima conversión, optimizados para Google, veloces y con un diseño premium que enamora.
                 </p>
                 <div class="flex space-x-4 pt-2">
-                    <a href="https://wa.me/5491171571891" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
-                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
-                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                    <a href="https://wa.me/5491171571891" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center text-slate-400 hover:text-white transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
                 </div>
             </div>
 
@@ -1088,10 +1088,10 @@
             <div class="space-y-4">
                 <h5 class="text-sm font-bold uppercase tracking-wider text-white font-display">Navegación</h5>
                 <ul class="space-y-2.5 text-sm font-light text-slate-400">
-                    <li><a href="#beneficios" class="hover:text-purple-400 transition-colors">Beneficios</a></li>
-                    <li><a href="#portafolio" class="hover:text-purple-400 transition-colors">Portafolio / Diseños</a></li>
-                    <li><a href="#calculadora" class="hover:text-purple-400 transition-colors">Calculadora de ROI</a></li>
-                    <li><a href="#proceso" class="hover:text-purple-400 transition-colors">Proceso de Trabajo</a></li>
+                    <li><a href="#beneficios" class="hover:text-emerald-400 transition-colors">Beneficios</a></li>
+                    <li><a href="#portafolio" class="hover:text-emerald-400 transition-colors">Portafolio / Diseños</a></li>
+                    <li><a href="#calculadora" class="hover:text-emerald-400 transition-colors">Calculadora de ROI</a></li>
+                    <li><a href="#proceso" class="hover:text-emerald-400 transition-colors">Proceso de Trabajo</a></li>
                 </ul>
             </div>
 
@@ -1100,8 +1100,8 @@
                 <h5 class="text-sm font-bold uppercase tracking-wider text-white font-display">Contacto</h5>
                 <ul class="space-y-2.5 text-sm font-light text-slate-400">
                     <li class="flex items-center space-x-2"><i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i><span>WhatsApp: +54 9 11 7157-1891</span></li>
-                    <li class="flex items-center space-x-2"><i data-lucide="mail" class="w-4 h-4 text-purple-400"></i><span>hola@simetrika.com.ar</span></li>
-                    <li class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i><span>Buenos Aires, Argentina</span></li>
+                    <li class="flex items-center space-x-2"><i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i><span>hola@simetrika.com.ar</span></li>
+                    <li class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4 text-teal-400"></i><span>Buenos Aires, Argentina</span></li>
                 </ul>
             </div>
         </div>
@@ -1180,7 +1180,7 @@
                     <!-- Header -->
                     <div class="flex justify-between items-center bg-[#090d16]/90 border-b border-white/5 px-4 py-3 sticky top-0 z-10 backdrop-blur-md">
                         <div class="text-[10px] font-bold text-white tracking-wider font-display flex items-center space-x-1.5">
-                            <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                             <span>NEXUS CONSULTING</span>
                         </div>
                         <div class="h-2 w-12 bg-white/10 rounded-full"></div>
@@ -1188,10 +1188,10 @@
                     
                     <!-- Hero -->
                     <div class="relative h-44 flex flex-col justify-center px-4 text-left overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(8,12,20,0.5) 0%, rgba(8,12,20,0.9) 100%), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80');">
-                        <span class="text-[7px] text-purple-400 font-bold uppercase tracking-wider">Líderes en Finanzas</span>
+                        <span class="text-[7px] text-emerald-400 font-bold uppercase tracking-wider">Líderes en Finanzas</span>
                         <h4 class="text-xs font-bold text-white mt-1 max-w-[200px] leading-tight">Diseñamos el futuro de tus inversiones globales</h4>
                         <div class="mt-3 flex space-x-1.5">
-                            <span class="text-[7px] bg-purple-600 text-white font-semibold px-2 py-0.5 rounded">Empezar</span>
+                            <span class="text-[7px] bg-emerald-600 text-white font-semibold px-2 py-0.5 rounded">Empezar</span>
                             <span class="text-[7px] bg-white/10 text-white font-semibold px-2 py-0.5 rounded border border-white/5">Saber Más</span>
                         </div>
                     </div>
@@ -1201,12 +1201,12 @@
                         <span class="text-[8px] font-bold text-slate-500 uppercase block tracking-wider">Nuestros Servicios</span>
                         <div class="grid grid-cols-2 gap-2.5">
                             <div class="bg-slate-900/60 p-2.5 rounded-lg border border-white/5 space-y-1.5">
-                                <div class="w-5 h-5 bg-purple-500/10 text-purple-400 rounded flex items-center justify-center"><i data-lucide="bar-chart" class="w-3 h-3"></i></div>
+                                <div class="w-5 h-5 bg-emerald-500/10 text-emerald-400 rounded flex items-center justify-center"><i data-lucide="bar-chart" class="w-3 h-3"></i></div>
                                 <div class="text-[9px] font-bold text-white">Gestión de Activos</div>
                                 <div class="text-[7px] text-slate-400 leading-tight">Optimización automatizada de fondos.</div>
                             </div>
                             <div class="bg-slate-900/60 p-2.5 rounded-lg border border-white/5 space-y-1.5">
-                                <div class="w-5 h-5 bg-cyan-500/10 text-cyan-400 rounded flex items-center justify-center"><i data-lucide="shield" class="w-3 h-3"></i></div>
+                                <div class="w-5 h-5 bg-teal-500/10 text-teal-400 rounded flex items-center justify-center"><i data-lucide="shield" class="w-3 h-3"></i></div>
                                 <div class="text-[9px] font-bold text-white">Ciberseguridad</div>
                                 <div class="text-[7px] text-slate-400 leading-tight">Seguridad bancaria encriptada.</div>
                             </div>
@@ -1217,7 +1217,7 @@
                     <div class="p-4 flex items-center space-x-3 bg-slate-950/80 border-y border-white/5">
                         <div class="w-16 h-16 rounded-lg bg-cover bg-center flex-shrink-0" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=300&q=80');"></div>
                         <div class="space-y-1">
-                            <span class="text-[8px] font-bold text-purple-400 block uppercase">Equipo Nexus</span>
+                            <span class="text-[8px] font-bold text-emerald-400 block uppercase">Equipo Nexus</span>
                             <div class="text-[9px] font-bold text-white">Consultoría de nivel internacional</div>
                             <p class="text-[7px] text-slate-400 leading-normal">Más de 15 años estructurando portafolios de alto rendimiento.</p>
                         </div>
@@ -1226,15 +1226,15 @@
                     <!-- Métricas -->
                     <div class="grid grid-cols-3 gap-2 p-4 bg-[#080c14] text-center">
                         <div class="bg-slate-900/40 p-2 rounded border border-white/5">
-                            <div class="text-xs font-bold text-purple-400 font-display">+150M</div>
+                            <div class="text-xs font-bold text-emerald-400 font-display">+150M</div>
                             <div class="text-[6px] text-slate-500 uppercase font-semibold">USD Administrados</div>
                         </div>
                         <div class="bg-slate-900/40 p-2 rounded border border-white/5">
-                            <div class="text-xs font-bold text-cyan-400 font-display">99.9%</div>
+                            <div class="text-xs font-bold text-teal-400 font-display">99.9%</div>
                             <div class="text-[6px] text-slate-500 uppercase font-semibold">Uptime SLA</div>
                         </div>
                         <div class="bg-slate-900/40 p-2 rounded border border-white/5">
-                            <div class="text-xs font-bold text-pink-400 font-display">12</div>
+                            <div class="text-xs font-bold text-lime-400 font-display">12</div>
                             <div class="text-[6px] text-slate-500 uppercase font-semibold">Países Activos</div>
                         </div>
                     </div>
@@ -1242,7 +1242,7 @@
                     <!-- Testimonio -->
                     <div class="p-4 bg-slate-900/40 border-t border-white/5 space-y-2">
                         <div class="flex items-center space-x-2">
-                            <span class="w-6 h-6 rounded-full bg-purple-600 flex items-center justify-center text-[8px] font-bold text-white">MG</span>
+                            <span class="w-6 h-6 rounded-full bg-emerald-600 flex items-center justify-center text-[8px] font-bold text-white">MG</span>
                             <div>
                                 <div class="text-[9px] font-bold text-white">María González</div>
                                 <div class="text-[7px] text-yellow-400">★★★★★</div>
@@ -1280,7 +1280,7 @@
 
                     <!-- Filtros Rápidos -->
                     <div class="flex space-x-1.5 px-4 py-2.5 bg-[#0a070e] overflow-x-auto scrollbar-none border-b border-white/5">
-                        <span class="text-[7px] bg-purple-900/35 border border-purple-500/35 text-purple-300 font-bold px-2 py-0.5 rounded-full whitespace-nowrap">Anillos</span>
+                        <span class="text-[7px] bg-emerald-900/35 border border-emerald-500/35 text-emerald-300 font-bold px-2 py-0.5 rounded-full whitespace-nowrap">Anillos</span>
                         <span class="text-[7px] bg-white/5 text-slate-400 px-2 py-0.5 rounded-full whitespace-nowrap">Collares</span>
                         <span class="text-[7px] bg-white/5 text-slate-400 px-2 py-0.5 rounded-full whitespace-nowrap">Aros</span>
                         <span class="text-[7px] bg-white/5 text-slate-400 px-2 py-0.5 rounded-full whitespace-nowrap">Pulseras</span>
@@ -1296,7 +1296,7 @@
                                 <div class="text-[7px] text-slate-500">Oro de 18 Quilates</div>
                                 <div class="flex justify-between items-center pt-1.5">
                                     <span class="text-[9px] font-bold text-emerald-400 font-display">$124.500</span>
-                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                    <span class="text-[7px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
                                 </div>
                             </div>
                         </div>
@@ -1309,7 +1309,7 @@
                                 <div class="text-[7px] text-slate-500">Diseño Geométrico</div>
                                 <div class="flex justify-between items-center pt-1.5">
                                     <span class="text-[9px] font-bold text-emerald-400 font-display">$89.900</span>
-                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                    <span class="text-[7px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
                                 </div>
                             </div>
                         </div>
@@ -1322,7 +1322,7 @@
                                 <div class="text-[7px] text-slate-500">Perla de Cultivo Natural</div>
                                 <div class="flex justify-between items-center pt-1.5">
                                     <span class="text-[9px] font-bold text-emerald-400 font-display">$75.000</span>
-                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                    <span class="text-[7px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
                                 </div>
                             </div>
                         </div>
@@ -1335,7 +1335,7 @@
                                 <div class="text-[7px] text-slate-500">Plata Esterlina 925</div>
                                 <div class="flex justify-between items-center pt-1.5">
                                     <span class="text-[9px] font-bold text-emerald-400 font-display">$64.000</span>
-                                    <span class="text-[7px] bg-purple-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
+                                    <span class="text-[7px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Añadir</span>
                                 </div>
                             </div>
                         </div>
@@ -1361,14 +1361,14 @@
                     <!-- Header -->
                     <div class="flex justify-between items-center bg-[#090d16]/95 border-b border-white/5 px-4 py-3 sticky top-0 z-10 backdrop-blur-md">
                         <div class="text-[10px] font-bold text-white tracking-wider font-display">CARLOS SILVA</div>
-                        <div class="h-1.5 w-1.5 rounded-full bg-cyan-400"></div>
+                        <div class="h-1.5 w-1.5 rounded-full bg-teal-400"></div>
                     </div>
                     
                     <!-- Hero -->
                     <div class="relative h-44 flex flex-col justify-center px-4 text-left overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(8,12,20,0.5) 0%, rgba(8,12,20,0.95) 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80');">
-                        <span class="text-[7px] text-cyan-400 font-bold uppercase tracking-widest">Estudio de Arquitectura</span>
+                        <span class="text-[7px] text-teal-400 font-bold uppercase tracking-widest">Estudio de Arquitectura</span>
                         <h4 class="text-xs font-bold text-white mt-1 max-w-[190px] leading-tight font-display">Creamos espacios que inspiran tu vida diaria</h4>
-                        <span class="inline-block self-start text-[7px] bg-cyan-500 text-black font-bold px-2.5 py-0.5 rounded-full mt-2.5">Explorar Obras</span>
+                        <span class="inline-block self-start text-[7px] bg-teal-500 text-black font-bold px-2.5 py-0.5 rounded-full mt-2.5">Explorar Obras</span>
                     </div>
 
                     <!-- Perfil Brief -->
@@ -1390,7 +1390,7 @@
                                 <div class="h-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=300&q=80');"></div>
                                 <div class="p-2.5">
                                     <div class="text-[8px] font-bold text-white">Casa Bosque — Córdoba</div>
-                                    <div class="text-[7px] text-cyan-400 mt-0.5">Finalizado en 2025</div>
+                                    <div class="text-[7px] text-teal-400 mt-0.5">Finalizado en 2025</div>
                                 </div>
                             </div>
                             
@@ -1399,7 +1399,7 @@
                                 <div class="h-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=300&q=80');"></div>
                                 <div class="p-2.5">
                                     <div class="text-[8px] font-bold text-white">Loft Industrial — Palermo</div>
-                                    <div class="text-[7px] text-cyan-400 mt-0.5">Finalizado en 2024</div>
+                                    <div class="text-[7px] text-teal-400 mt-0.5">Finalizado en 2024</div>
                                 </div>
                             </div>
 
@@ -1408,7 +1408,7 @@
                                 <div class="h-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=300&q=80');"></div>
                                 <div class="p-2.5">
                                     <div class="text-[8px] font-bold text-white">Hotel Terraza — Mendoza</div>
-                                    <div class="text-[7px] text-cyan-400 mt-0.5">Finalizado en 2023</div>
+                                    <div class="text-[7px] text-teal-400 mt-0.5">Finalizado en 2023</div>
                                 </div>
                             </div>
                         </div>
@@ -1431,7 +1431,7 @@
                 btn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5";
             });
             const activeBtn = document.getElementById(`btn-${type}`);
-            activeBtn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-600/90 text-white border border-purple-500/30";
+            activeBtn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-emerald-600/90 text-white border border-emerald-500/30";
 
             // Actualizar datos
             const info = templateData[type];
@@ -1467,12 +1467,12 @@
 
             if (mode === 'desktop') {
                 container.style.maxWidth = '100%';
-                btnDesktop.className = "p-1.5 rounded-md bg-purple-600 text-white transition-all";
+                btnDesktop.className = "p-1.5 rounded-md bg-emerald-600 text-white transition-all";
                 btnMobile.className = "p-1.5 rounded-md text-slate-400 hover:text-white transition-all";
             } else {
                 container.style.maxWidth = '320px';
                 btnDesktop.className = "p-1.5 rounded-md text-slate-400 hover:text-white transition-all";
-                btnMobile.className = "p-1.5 rounded-md bg-purple-600 text-white transition-all";
+                btnMobile.className = "p-1.5 rounded-md bg-emerald-600 text-white transition-all";
             }
         }
 
@@ -1566,16 +1566,16 @@
             // Quitar clase activa a todas las tarjetas del paso 1
             const cards = document.querySelectorAll('#step-content-1 .wizard-card');
             cards.forEach(c => {
-                c.className = "wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-purple-500/50 hover:bg-purple-950/10 transition-all select-none";
+                c.className = "wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none";
                 c.querySelector('.wizard-check-indicator').className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center";
                 c.querySelector('.wizard-check-indicator').innerHTML = "";
             });
 
             // Añadir clase a seleccionada
             const label = radioInput.closest('label');
-            label.className = "wizard-card cursor-pointer border border-purple-500 bg-purple-950/10 rounded-2xl p-6 flex flex-col justify-between hover:border-purple-500 transition-all select-none";
+            label.className = "wizard-card cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500 transition-all select-none";
             const check = label.querySelector('.wizard-check-indicator');
-            check.className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center";
+            check.className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center";
             check.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>';
 
             lucide.createIcons();
@@ -1584,25 +1584,25 @@
         function selectWizardGoal(radioInput) {
             const cards = document.querySelectorAll('#step-content-2 .wizard-card-goal');
             cards.forEach(c => {
-                c.className = "wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500/50 transition-all select-none";
+                c.className = "wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none";
             });
 
             const label = radioInput.closest('label');
-            label.className = "wizard-card-goal cursor-pointer border border-purple-500 bg-purple-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-purple-500 transition-all select-none";
+            label.className = "wizard-card-goal cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500 transition-all select-none";
         }
 
         function selectWizardContent(radioInput) {
             const cards = document.querySelectorAll('#step-content-3 .wizard-card-content');
             cards.forEach(c => {
-                c.className = "wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-purple-500/50 transition-all select-none";
+                c.className = "wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500/50 transition-all select-none";
                 c.querySelector('.wizard-check-indicator-content').className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center";
                 c.querySelector('.wizard-check-indicator-content').innerHTML = "";
             });
 
             const label = radioInput.closest('label');
-            label.className = "wizard-card-content cursor-pointer border border-purple-500 bg-purple-950/10 rounded-xl p-5 flex items-center justify-between hover:border-purple-500 transition-all select-none";
+            label.className = "wizard-card-content cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500 transition-all select-none";
             const check = label.querySelector('.wizard-check-indicator-content');
-            check.className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-purple-500 bg-purple-500 flex items-center justify-center";
+            check.className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center";
             check.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>';
 
             lucide.createIcons();
