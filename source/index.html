@@ -25,8 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons CDN para iconografía ultra-premium -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons CDN cargado sin bloquear el renderizado -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
     <!-- Configuración personalizada de Tailwind -->
     <script>
@@ -1123,15 +1123,20 @@
 
         // 1. Comportamiento del Navbar Dinámico
         const navbar = document.getElementById('navbar');
+        let isScrolled = false;
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
-                navbar.classList.remove('border-transparent');
-            } else {
-                navbar.classList.remove('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
-                navbar.classList.add('border-transparent');
+            const scrolled = window.scrollY > 50;
+            if (scrolled !== isScrolled) {
+                isScrolled = scrolled;
+                if (isScrolled) {
+                    navbar.classList.add('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
+                    navbar.classList.remove('border-transparent');
+                } else {
+                    navbar.classList.remove('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
+                    navbar.classList.add('border-transparent');
+                }
             }
-        });
+        }, { passive: true });
 
         // Menú hamburguesa móvil
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -1667,6 +1672,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
                     }
                 });
             }, {
