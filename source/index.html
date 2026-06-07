@@ -180,6 +180,19 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Transición de menú móvil premium */
+        #mobile-menu {
+            transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+            opacity: 0;
+            transform: translateY(-10px);
+            visibility: hidden;
+        }
+        #mobile-menu.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
     </style>
 </head>
 <body class="bg-brand-dark font-sans text-slate-300 antialiased overflow-x-hidden selection:bg-emerald-500/30 selection:text-white">
@@ -217,7 +230,7 @@
 
     <!-- Navbar Flotante -->
     <header id="navbar" class="fixed top-0 left-0 w-full z-40 transition-all duration-500 border-b border-transparent">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logotipo -->
                 <a href="#" class="flex items-center space-x-2 group">
@@ -250,7 +263,7 @@
         </div>
 
         <!-- Menú Móvil Desplegable -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-brand-dark/95 border-b border-white/10 backdrop-blur-xl px-6 py-6 space-y-4 flex flex-col transition-all duration-300">
+        <div id="mobile-menu" class="md:hidden absolute top-20 left-0 w-full bg-brand-dark/95 border-b border-white/10 backdrop-blur-xl px-6 py-6 space-y-4 flex flex-col transition-all duration-300">
             <a href="#beneficios" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Beneficios</a>
             <a href="#portafolio" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Diseños</a>
             <a href="#calculadora" class="mobile-nav-link text-lg font-medium text-slate-300 hover:text-white transition">Calculadora</a>
@@ -262,7 +275,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-36 pb-28 px-6 sm:px-8 relative overflow-hidden">
+    <section class="pt-28 pb-16 md:pt-36 md:pb-28 px-4 sm:px-8 relative overflow-hidden">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
             
             <!-- Texto del Hero -->
@@ -276,7 +289,7 @@
                     <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">⚡ Tu Web en tiempo récord</span>
                 </div>
                 
-                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-display leading-[1.05] text-white tracking-tight">
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display leading-[1.1] sm:leading-[1.05] text-white tracking-tight">
                     Tu negocio merece estar en <span class="text-gradient-primary">Internet</span>
                 </h1>
                 
@@ -296,18 +309,18 @@
                 </div>
 
                 <!-- Info rápida de confianza -->
-                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/5 text-center lg:text-left max-w-md mx-auto lg:mx-0">
+                <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-white/5 text-center lg:text-left max-w-md mx-auto lg:mx-0">
                     <div>
-                        <div class="text-2xl font-bold font-display text-white">3 Días</div>
-                        <div class="text-xs text-slate-500 uppercase font-semibold">Entrega Garantizada</div>
+                        <div class="text-lg sm:text-2xl font-bold font-display text-white">3 Días</div>
+                        <div class="text-[9px] sm:text-xs text-slate-500 uppercase font-semibold tracking-wider">Entrega Garantizada</div>
                     </div>
                     <div>
-                        <div class="text-2xl font-bold font-display text-white">100%</div>
-                        <div class="text-xs text-slate-500 uppercase font-semibold">Responsivo</div>
+                        <div class="text-lg sm:text-2xl font-bold font-display text-white">100%</div>
+                        <div class="text-[9px] sm:text-xs text-slate-500 uppercase font-semibold tracking-wider">Responsivo</div>
                     </div>
                     <div>
-                        <div class="text-2xl font-bold font-display text-white">SEO</div>
-                        <div class="text-xs text-slate-500 uppercase font-semibold">Optimizado Google</div>
+                        <div class="text-lg sm:text-2xl font-bold font-display text-white">SEO</div>
+                        <div class="text-[9px] sm:text-xs text-slate-500 uppercase font-semibold tracking-wider">Optimizado Google</div>
                     </div>
                 </div>
             </div>
@@ -369,7 +382,7 @@
                     </div>
 
                     <!-- Insignia Flotante Extra -->
-                    <div class="absolute -bottom-6 -left-6 bg-slate-900/90 border border-white/10 p-4 rounded-2xl flex items-center space-x-3 shadow-xl backdrop-blur-xl animate-float">
+                    <div class="absolute -bottom-4 sm:-bottom-6 left-2 sm:-left-6 bg-slate-900/90 border border-white/10 p-4 rounded-2xl flex items-center space-x-3 shadow-xl backdrop-blur-xl animate-float">
                         <span class="p-2.5 bg-emerald-500/10 rounded-xl text-emerald-400 border border-emerald-500/20">
                             <i data-lucide="trending-up" class="w-5 h-5"></i>
                         </span>
@@ -385,7 +398,7 @@
     </section>
 
     <!-- Bento Grid de Beneficios -->
-    <section id="beneficios" class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
+    <section id="beneficios" class="py-16 sm:py-24 px-4 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <h2 class="text-4xl md:text-5xl font-extrabold font-display text-white">
@@ -399,7 +412,7 @@
             <!-- Bento Grid -->
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Tarjeta Bento 1 (Grande - 2 columnas en MD) -->
-                <div class="glass-card-accent p-8 rounded-2xl md:col-span-2 flex flex-col justify-between group">
+                <div class="glass-card-accent p-6 sm:p-8 rounded-2xl md:col-span-2 flex flex-col justify-between group">
                     <div class="space-y-6">
                         <div class="w-14 h-14 bg-emerald-500/15 border border-emerald-500/25 rounded-2xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                             <i data-lucide="search" class="w-7 h-7"></i>
@@ -418,7 +431,7 @@
                 </div>
                 
                 <!-- Tarjeta Bento 2 (Estadística Vertical) -->
-                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between text-center relative overflow-hidden group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between text-center relative overflow-hidden group">
                     <div class="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="space-y-4">
                         <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Estadística Probada</span>
@@ -433,7 +446,7 @@
                 </div>
 
                 <!-- Tarjeta Bento 3 (Credibilidad) -->
-                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group">
                     <div class="space-y-6">
                         <div class="w-14 h-14 bg-teal-500/15 border border-teal-500/25 rounded-2xl flex items-center justify-center text-teal-400 group-hover:scale-110 transition-transform">
                             <i data-lucide="shield-check" class="w-7 h-7"></i>
@@ -449,7 +462,7 @@
                 </div>
 
                 <!-- Tarjeta Bento 4 (Siempre abierto) -->
-                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group">
                     <div class="space-y-6">
                         <div class="w-14 h-14 bg-emerald-600/15 border border-emerald-600/25 rounded-2xl flex items-center justify-center text-emerald-300 group-hover:scale-110 transition-transform">
                             <i data-lucide="clock" class="w-7 h-7"></i>
@@ -465,7 +478,7 @@
                 </div>
 
                 <!-- Tarjeta Bento 5 (Conversión Automática) -->
-                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group">
                     <div class="space-y-6">
                         <div class="w-14 h-14 bg-emerald-500/15 border border-emerald-500/25 rounded-2xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                             <i data-lucide="zap" class="w-7 h-7"></i>
@@ -484,7 +497,7 @@
     </section>
 
     <!-- Visualizador Interactivo de Portafolio / Showcase -->
-    <section id="portafolio" class="py-24 px-6 sm:px-8 relative">
+    <section id="portafolio" class="py-16 sm:py-24 px-4 sm:px-8 relative">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">Estilo e Innovación</span>
@@ -496,14 +509,14 @@
                 </p>
                 
                 <!-- Selector de categorías de plantillas -->
-                <div class="flex justify-center space-x-2 pt-4">
-                    <button onclick="switchTemplate('corporativa')" id="btn-corporativa" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-emerald-600/90 text-white border border-emerald-500/30">
+                <div class="flex overflow-x-auto whitespace-nowrap md:justify-center md:flex-wrap gap-2 pb-2 scrollbar-none pt-4 max-w-full">
+                    <button onclick="switchTemplate('corporativa')" id="btn-corporativa" class="template-tab-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-emerald-600/90 text-white border border-emerald-500/30 flex-shrink-0">
                         Corporativa / Servicios
                     </button>
-                    <button onclick="switchTemplate('tienda')" id="btn-tienda" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5">
+                    <button onclick="switchTemplate('tienda')" id="btn-tienda" class="template-tab-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5 flex-shrink-0">
                         Tienda Online / Catálogo
                     </button>
-                    <button onclick="switchTemplate('personal')" id="btn-personal" class="template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5">
+                    <button onclick="switchTemplate('personal')" id="btn-personal" class="template-tab-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5 flex-shrink-0">
                         Portfolio Profesional
                     </button>
                 </div>
@@ -543,15 +556,15 @@
                         <!-- Barra de control de navegador sim -->
                         <div class="flex items-center justify-between pb-3 border-b border-white/5 mb-4">
                             <div class="flex items-center space-x-2">
-                                <span class="w-3.5 h-3.5 rounded-full bg-rose-500/80"></span>
-                                <span class="w-3.5 h-3.5 rounded-full bg-amber-500/80"></span>
-                                <span class="w-3.5 h-3.5 rounded-full bg-emerald-500/80"></span>
-                                <div id="showcase-url" class="bg-slate-900 border border-white/5 rounded-md px-4 py-1 text-xs text-slate-400 font-mono w-48 sm:w-64 select-none ml-4 overflow-hidden truncate">
+                                <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                                <div id="showcase-url" class="hidden sm:block bg-slate-900 border border-white/5 rounded-md px-4 py-1 text-xs text-slate-400 font-mono w-48 sm:w-64 select-none ml-4 overflow-hidden truncate">
                                     https://simetrika.com/corporativa
                                 </div>
                             </div>
                             <!-- Switcher Móvil vs Desktop Simulado -->
-                            <div class="flex bg-slate-900 border border-white/10 rounded-lg p-0.5">
+                            <div class="hidden sm:flex bg-slate-900 border border-white/10 rounded-lg p-0.5">
                                 <button onclick="toggleDeviceMode('desktop')" id="btn-device-desktop" class="p-1.5 rounded-md bg-emerald-600 text-white transition-all">
                                     <i data-lucide="monitor" class="w-4 h-4"></i>
                                 </button>
@@ -577,7 +590,7 @@
     </section>
 
     <!-- Calculadora ROI Interactiva -->
-    <section id="calculadora" class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
+    <section id="calculadora" class="py-16 sm:py-24 px-4 sm:px-8 bg-slate-950/40 relative border-y border-white/5">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Retorno de Inversión</span>
@@ -590,7 +603,7 @@
             </div>
 
             <!-- Dashboard de la calculadora -->
-            <div class="glass-card-accent p-8 rounded-3xl max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="glass-card-accent p-5 sm:p-8 rounded-3xl max-w-4xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 
                 <!-- Inputs (Sliders) -->
                 <div class="space-y-8">
@@ -663,7 +676,7 @@
     </section>
 
     <!-- Proceso Moderno -->
-    <section id="proceso" class="py-24 px-6 sm:px-8 relative">
+    <section id="proceso" class="py-16 sm:py-24 px-4 sm:px-8 relative">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">Velocidad y Eficiencia</span>
@@ -681,7 +694,7 @@
                 <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-emerald-800/20 via-emerald-600/20 to-teal-800/20 z-0"></div>
                 
                 <!-- Paso 1 -->
-                <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="w-12 h-12 bg-gradient-to-tr from-emerald-800 to-emerald-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-emerald-950/30 group-hover:scale-110 transition-transform">
                             1
@@ -698,7 +711,7 @@
                 </div>
 
                 <!-- Paso 2 -->
-                <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="w-12 h-12 bg-gradient-to-tr from-teal-800 to-teal-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-teal-950/30 group-hover:scale-110 transition-transform">
                             2
@@ -715,7 +728,7 @@
                 </div>
 
                 <!-- Paso 3 -->
-                <div class="glass-card p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
+                <div class="glass-card p-6 sm:p-8 rounded-2xl relative z-10 space-y-6 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="w-12 h-12 bg-gradient-to-tr from-emerald-900 to-teal-400 rounded-xl flex items-center justify-center text-white font-bold text-lg font-display shadow-lg shadow-emerald-950/30 group-hover:scale-110 transition-transform">
                             3
@@ -735,7 +748,7 @@
     </section>
 
     <!-- Comparativa: Redes vs Web -->
-    <section class="py-24 px-6 sm:px-8 bg-slate-950/20 relative">
+    <section class="py-16 sm:py-24 px-4 sm:px-8 bg-slate-950/20 relative">
         <div class="max-w-5xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-extrabold font-display text-white">
@@ -746,8 +759,8 @@
                 </p>
             </div>
 
-            <!-- Tabla Comparativa Premium -->
-            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
+            <!-- Tabla Comparativa Premium (Visible en >= md) -->
+            <div class="hidden md:block glass-card rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
                 <div class="grid grid-cols-12 bg-slate-950/60 p-4 border-b border-white/10 font-bold text-sm text-white select-none">
                     <div class="col-span-6">Característica</div>
                     <div class="col-span-3 text-center text-emerald-400">Página Web Propia</div>
@@ -776,11 +789,74 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Versión Móvil de Comparativa (Card-based, visible en < md) -->
+            <div class="space-y-4 md:hidden">
+                <!-- Tarjeta 1 -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 space-y-3">
+                    <h4 class="font-bold text-white text-sm">Aparición en búsquedas de intención (Google)</h4>
+                    <div class="grid grid-cols-2 gap-3 pt-1 text-xs">
+                        <div class="bg-emerald-950/20 border border-emerald-500/20 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-emerald-400 font-bold block">Página Web</span>
+                            <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+                        </div>
+                        <div class="bg-slate-900/40 border border-white/5 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-slate-500 font-bold block">Solo Redes</span>
+                            <i data-lucide="x" class="w-4 h-4 text-slate-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 space-y-3">
+                    <h4 class="font-bold text-white text-sm">Control de la experiencia visual y marca</h4>
+                    <div class="grid grid-cols-2 gap-3 pt-1 text-xs">
+                        <div class="bg-emerald-950/20 border border-emerald-500/20 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-emerald-400 font-bold block">Página Web</span>
+                            <span class="text-emerald-300 font-semibold text-[10px]">100% Personalizable</span>
+                        </div>
+                        <div class="bg-slate-900/40 border border-white/5 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-slate-500 font-bold block">Solo Redes</span>
+                            <span class="text-slate-500 font-semibold text-[10px]">Formato Genérico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 space-y-3">
+                    <h4 class="font-bold text-white text-sm">Riesgo de cierre de cuenta / algoritmo</h4>
+                    <div class="grid grid-cols-2 gap-3 pt-1 text-xs">
+                        <div class="bg-emerald-950/20 border border-emerald-500/20 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-emerald-400 font-bold block">Página Web</span>
+                            <span class="text-emerald-300 font-semibold text-[10px]">Cero (Es de tu propiedad)</span>
+                        </div>
+                        <div class="bg-slate-900/40 border border-white/5 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-slate-500 font-bold block">Solo Redes</span>
+                            <span class="text-rose-500 font-semibold text-[10px]">Muy Alto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="glass-card p-5 rounded-2xl border border-white/10 space-y-3">
+                    <h4 class="font-bold text-white text-sm">Imagen y estatus del negocio</h4>
+                    <div class="grid grid-cols-2 gap-3 pt-1 text-xs">
+                        <div class="bg-emerald-950/20 border border-emerald-500/20 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-emerald-400 font-bold block">Página Web</span>
+                            <span class="text-emerald-300 font-semibold text-[10px]">Empresa Consolidada</span>
+                        </div>
+                        <div class="bg-slate-900/40 border border-white/5 rounded-xl p-3 text-center flex flex-col justify-between items-center space-y-2">
+                            <span class="text-slate-500 font-bold block">Solo Redes</span>
+                            <span class="text-slate-500 font-semibold text-[10px]">Comercio Informal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Qué Incluye -->
-    <section class="py-24 px-6 sm:px-8 relative border-t border-white/5 bg-slate-950/40">
+    <section class="py-16 sm:py-24 px-4 sm:px-8 relative border-t border-white/5 bg-slate-950/40">
         <div class="max-w-6xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Todo Incluido</span>
@@ -852,7 +928,7 @@
     </section>
 
     <!-- Cotizador Paso a Paso / Lead Wizard -->
-    <section id="cotizador" class="py-24 px-6 sm:px-8 relative border-t border-white/5">
+    <section id="cotizador" class="py-16 sm:py-24 px-4 sm:px-8 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 font-display">Comienza Hoy Mismo</span>
@@ -865,7 +941,7 @@
             </div>
 
             <!-- Interfaz del configurador multi-paso -->
-            <div class="glass-card-accent p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="glass-card-accent p-5 sm:p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-1.5 bg-slate-900">
                     <div id="wizard-progress" class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-500" style="width: 33%"></div>
                 </div>
@@ -882,7 +958,7 @@
                     <div id="step-content-1" class="wizard-step space-y-6">
                         <h3 class="text-xl font-bold text-white font-display">¿A qué se dedica tu negocio o emprendimiento?</h3>
                         <div class="grid sm:grid-cols-2 gap-4">
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-5 sm:p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Servicios Profesionales" class="hidden" checked onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
                                     <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="briefcase" class="w-6 h-6"></i></span>
@@ -894,7 +970,7 @@
                                 </div>
                             </label>
                             
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-5 sm:p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Tienda Online o Catálogo" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
                                     <span class="p-3 bg-teal-500/10 rounded-xl text-teal-400"><i data-lucide="shopping-bag" class="w-6 h-6"></i></span>
@@ -906,7 +982,7 @@
                                 </div>
                             </label>
 
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-5 sm:p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Negocio de Comida o Gastronomía" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
                                     <span class="p-3 bg-emerald-500/10 rounded-xl text-emerald-400"><i data-lucide="coffee" class="w-6 h-6"></i></span>
@@ -918,7 +994,7 @@
                                 </div>
                             </label>
 
-                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
+                            <label class="wizard-card cursor-pointer border border-white/10 rounded-2xl p-5 sm:p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none">
                                 <input type="radio" name="negocio" value="Marca Personal o Portfolio" class="hidden" onclick="selectWizardCard(this)">
                                 <div class="flex justify-between items-center w-full">
                                     <span class="p-3 bg-blue-500/10 rounded-xl text-blue-400"><i data-lucide="user" class="w-6 h-6"></i></span>
@@ -936,21 +1012,21 @@
                     <div id="step-content-2" class="wizard-step hidden space-y-6">
                         <h3 class="text-xl font-bold text-white font-display">¿Cuál es el objetivo principal de tu nueva web?</h3>
                         <div class="grid sm:grid-cols-3 gap-4">
-                            <label class="wizard-card-goal cursor-pointer border border-emerald-500/50 bg-emerald-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500 transition-all select-none">
+                            <label class="wizard-card-goal cursor-pointer border border-emerald-500/50 bg-emerald-950/10 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Captar Clientes" class="hidden" checked onclick="selectWizardGoal(this)">
                                 <span class="p-4 bg-emerald-500/10 rounded-full text-emerald-400"><i data-lucide="phone-call" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Recibir Consultas</span>
                                 <span class="text-xs text-slate-400 font-light">Llamadas y chats de potenciales clientes.</span>
                             </label>
                             
-                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
+                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Vender Directamente" class="hidden" onclick="selectWizardGoal(this)">
                                 <span class="p-4 bg-teal-500/10 rounded-full text-teal-400"><i data-lucide="credit-card" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Vender Online</span>
                                 <span class="text-xs text-slate-400 font-light">Procesar pagos o pedidos directos de productos.</span>
                             </label>
 
-                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
+                            <label class="wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none">
                                 <input type="radio" name="objetivo" value="Exposición de Marca" class="hidden" onclick="selectWizardGoal(this)">
                                 <span class="p-4 bg-emerald-500/10 rounded-full text-emerald-400"><i data-lucide="eye" class="w-7 h-7"></i></span>
                                 <span class="text-base font-bold text-white font-display block">Branding / Estatus</span>
@@ -963,7 +1039,7 @@
                     <div id="step-content-3" class="wizard-step hidden space-y-6">
                         <h3 class="text-xl font-bold text-white font-display">¿Contás con contenido listo para subir?</h3>
                         <div class="space-y-4">
-                            <label class="wizard-card-content cursor-pointer border border-emerald-500/50 bg-emerald-950/10 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500 transition-all select-none">
+                            <label class="wizard-card-content cursor-pointer border border-emerald-500/50 bg-emerald-950/10 rounded-xl p-4 sm:p-5 flex items-center justify-between hover:border-emerald-500 transition-all select-none">
                                 <div class="flex items-center space-x-4">
                                     <input type="radio" name="contenido" value="Tengo Logo y Textos Listos" class="hidden" checked onclick="selectWizardContent(this)">
                                     <span class="p-3 bg-emerald-500/10 rounded-lg text-emerald-400"><i data-lucide="file-text" class="w-5 h-5"></i></span>
@@ -975,7 +1051,7 @@
                                 <span class="wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i></span>
                             </label>
 
-                            <label class="wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500/50 transition-all select-none">
+                            <label class="wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-4 sm:p-5 flex items-center justify-between hover:border-emerald-500/50 transition-all select-none">
                                 <div class="flex items-center space-x-4">
                                     <input type="radio" name="contenido" value="Necesito Ayuda Con El Contenido" class="hidden" onclick="selectWizardContent(this)">
                                     <span class="p-3 bg-teal-500/10 rounded-lg text-teal-400"><i data-lucide="edit" class="w-5 h-5"></i></span>
@@ -1008,7 +1084,7 @@
     </section>
 
     <!-- Preguntas Frecuentes (FAQ) en Acordeón -->
-    <section class="py-24 px-6 sm:px-8 bg-slate-950/40 relative border-t border-white/5">
+    <section class="py-16 sm:py-24 px-4 sm:px-8 bg-slate-950/40 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto space-y-16">
             <div class="text-center space-y-4 max-w-2xl mx-auto">
                 <span class="text-xs font-bold uppercase tracking-wider text-teal-400 font-display">Preguntas Frecuentes</span>
@@ -1104,7 +1180,7 @@
     </section>
 
     <!-- Footer Premium -->
-    <footer class="py-16 px-6 sm:px-8 border-t border-white/10 bg-slate-950/80 relative">
+    <footer class="py-12 sm:py-16 px-4 sm:px-8 border-t border-white/10 bg-slate-950/80 relative">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-left">
             
             <!-- Columna Logo/Propósito -->
@@ -1159,7 +1235,7 @@
 
     <!-- Lógica de Interactividad en Javascript Vanilla -->
     <script>
-        // Pantalla de carga con duración de 4 segundos para suavizar la transición
+        // Pantalla de carga con duración optimizada para suavizar la transición
         window.addEventListener('load', () => {
             const loadingScreen = document.getElementById('loading-screen');
             if (loadingScreen) {
@@ -1168,7 +1244,7 @@
                     setTimeout(() => {
                         loadingScreen.remove();
                     }, 700);
-                }, 4000);
+                }, 800);
             }
         });
 
@@ -1179,46 +1255,53 @@
 
         // 1. Comportamiento del Navbar Dinámico
         const navbar = document.getElementById('navbar');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
         let isScrolled = false;
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY > 50;
-            if (scrolled !== isScrolled) {
-                isScrolled = scrolled;
-                if (isScrolled) {
-                    navbar.classList.add('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
-                    navbar.classList.remove('border-transparent');
-                } else {
-                    navbar.classList.remove('bg-brand-dark/80', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
-                    navbar.classList.add('border-transparent');
-                }
+
+        function updateNavbarBackground() {
+            const isMenuOpen = mobileMenu.classList.contains('active');
+            const scrolled = window.scrollY > 50 || isMenuOpen;
+            
+            if (scrolled) {
+                navbar.classList.add('bg-brand-dark/95', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
+                navbar.classList.remove('border-transparent');
+            } else {
+                navbar.classList.remove('bg-brand-dark/95', 'backdrop-blur-xl', 'border-white/10', 'py-1', 'shadow-2xl');
+                navbar.classList.add('border-transparent');
             }
+        }
+
+        window.addEventListener('scroll', () => {
+            updateNavbarBackground();
         }, { passive: true });
 
         // Menú hamburguesa móvil
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('active');
+            const isOpen = mobileMenu.classList.contains('active');
             
             // Cambiar icono
-            if (isHidden) {
-                menuIcon.setAttribute('data-lucide', 'menu');
-            } else {
+            if (isOpen) {
                 menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
             }
             lucide.createIcons();
+            
+            // Actualizar el fondo del navbar
+            updateNavbarBackground();
         });
 
         // Ocultar menú móvil en clic de link
-        const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-menu a');
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('active');
                 menuIcon.setAttribute('data-lucide', 'menu');
                 lucide.createIcons();
+                updateNavbarBackground();
             });
         });
 
@@ -1489,10 +1572,10 @@
             
             // Actualizar botones de pestañas
             document.querySelectorAll('.template-tab-btn').forEach(btn => {
-                btn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5";
+                btn.className = "template-tab-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/5 text-slate-400 hover:text-white border border-white/5 flex-shrink-0";
             });
             const activeBtn = document.getElementById(`btn-${type}`);
-            activeBtn.className = "template-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-emerald-600/90 text-white border border-emerald-500/30";
+            activeBtn.className = "template-tab-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-emerald-600/90 text-white border border-emerald-500/30 flex-shrink-0";
 
             // Actualizar datos
             const info = templateData[type];
@@ -1627,14 +1710,14 @@
             // Quitar clase activa a todas las tarjetas del paso 1
             const cards = document.querySelectorAll('#step-content-1 .wizard-card');
             cards.forEach(c => {
-                c.className = "wizard-card cursor-pointer border border-white/10 rounded-2xl p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none";
+                c.className = "wizard-card cursor-pointer border border-white/10 rounded-2xl p-5 sm:p-6 bg-slate-900/50 flex flex-col justify-between hover:border-emerald-500/50 hover:bg-emerald-950/10 transition-all select-none";
                 c.querySelector('.wizard-check-indicator').className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center";
                 c.querySelector('.wizard-check-indicator').innerHTML = "";
             });
 
             // Añadir clase a seleccionada
             const label = radioInput.closest('label');
-            label.className = "wizard-card cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500 transition-all select-none";
+            label.className = "wizard-card cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-emerald-500 transition-all select-none";
             const check = label.querySelector('.wizard-check-indicator');
             check.className = "wizard-check-indicator w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center";
             check.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>';
@@ -1645,23 +1728,23 @@
         function selectWizardGoal(radioInput) {
             const cards = document.querySelectorAll('#step-content-2 .wizard-card-goal');
             cards.forEach(c => {
-                c.className = "wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none";
+                c.className = "wizard-card-goal cursor-pointer border border-white/10 bg-slate-900/50 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500/50 transition-all select-none";
             });
 
             const label = radioInput.closest('label');
-            label.className = "wizard-card-goal cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500 transition-all select-none";
+            label.className = "wizard-card-goal cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center space-y-4 hover:border-emerald-500 transition-all select-none";
         }
 
         function selectWizardContent(radioInput) {
             const cards = document.querySelectorAll('#step-content-3 .wizard-card-content');
             cards.forEach(c => {
-                c.className = "wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500/50 transition-all select-none";
+                c.className = "wizard-card-content cursor-pointer border border-white/10 bg-slate-900/50 rounded-xl p-4 sm:p-5 flex items-center justify-between hover:border-emerald-500/50 transition-all select-none";
                 c.querySelector('.wizard-check-indicator-content').className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center";
                 c.querySelector('.wizard-check-indicator-content').innerHTML = "";
             });
 
             const label = radioInput.closest('label');
-            label.className = "wizard-card-content cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-xl p-5 flex items-center justify-between hover:border-emerald-500 transition-all select-none";
+            label.className = "wizard-card-content cursor-pointer border border-emerald-500 bg-emerald-950/10 rounded-xl p-4 sm:p-5 flex items-center justify-between hover:border-emerald-500 transition-all select-none";
             const check = label.querySelector('.wizard-check-indicator-content');
             check.className = "wizard-check-indicator-content w-5 h-5 rounded-full border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center";
             check.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>';
