@@ -1173,7 +1173,9 @@
         });
 
         // Inicializar iconos de Lucide
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
 
         // 1. Comportamiento del Navbar Dinámico
         const navbar = document.getElementById('navbar');
